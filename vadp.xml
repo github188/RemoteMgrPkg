@@ -5,7 +5,7 @@
 	<!-- Vendor name -->
 	<vendor>VIVOTEK</vendor>
 	<!-- Package version -->
-	<version>1.0.0.1</version>
+	<version>1.0.1.0</version>
 	<!-- Define the name of main script -->
 	<initscr>main.sh</initscr>
 	<!-- Package size -->

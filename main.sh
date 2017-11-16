@@ -1,5 +1,4 @@
 #!/bin/sh
-
 cmd=${1}
 location=${2}
 new_package=${3}
@@ -28,30 +27,47 @@ use_default_userpass()
 
 get_vadpname()
 {
-	tmp=`grep '<name>' $vadplocation/vadp.xml | sed 's/<name>\(.*\)<\/name>/\1/'`
-	name="$(echo -e "${tmp}" | tr -d '[[:space:]]')"
-	echo ${name}
+	idx=`readlink -f $0 | cut -d'/' -f5`
+	mod_name=`confclient -p 99 -g vadp_module_i${idx}_name | cut -d "=" -f2`
+	link_name=`echo "${mod_name}" | sed -e 's/[[:blank:]]/-/g'`
+	echo ${link_name}
 }
 
-revise_openconf()
+modify_openconf()
 {
 	sed -i "s#ca \/ovpn\/ca.crt#ca $vadplocation/\ovpn\/ca.crt#" $vadplocation/conf.d/openvpn.conf
 	sed -i "s#cert \/ovpn\/client1.crt#cert $vadplocation/\ovpn\/client1.crt#" $vadplocation/conf.d/openvpn.conf
 	sed -i "s#key \/ovpn\/client1.key#key $vadplocation/\ovpn\/client1.key#" $vadplocation/conf.d/openvpn.conf
 }
 
-revise_mvaasconf()
+modify_mvaasconf()
 {
 	sed -i "s#OpenVPNScriptPath \/usr\/bin\/start_ovpn#OpenVPNScriptPath $startovpn_path#" $vadplocation/conf.d/mvaasd.conf
-	sed -i "s#HTTPExtraInfoUrl \/cgi-bin\/getparam.cgi#HTTPExtraInfoUrl \/`get_vadpname`\/cgi-bin\/get_param.cgi#" $vadplocation/conf.d/mvaasd.conf
+	sed -i "s#HTTPExtraInfoUrl \/cgi-bin\/getparam.cgi#HTTPExtraInfoUrl \/`get_vadpname`\/cgi-bin\/get_mvaas_param.cgi#" $vadplocation/conf.d/mvaasd.conf
 
+}
+
+clear_refererconf()
+{
+	MAX_REFERER_COUNT=10
+	server_ip=`confclient -p 99 -g system_mvaas_registerserver_address | cut -d "=" -f2`
+	cnt=0
+	while [ $cnt -lt $MAX_REFERER_COUNT ];do
+		name=`tinyxmlparser -x /root/security/referer/RcExceptionHost/i$cnt/name -f /etc/conf.d/config_referer.xml`
+		if [ $name == $server_ip ];then
+			sed -i -e '/<'i$cnt'>/,/<\/'i$cnt'>/ s|<name>.*</name>|<name></name>|g' /etc/conf.d/config_referer.xml
+			kill -31 `cat /var/run/boa.pid` 	#reload referer
+			break;
+		fi
+		cnt=$((cnt+1))
+	done
 }
 
 case ${cmd} in
 	start)
 		use_default_userpass
-		revise_openconf
-		revise_mvaasconf
+		modify_openconf
+		modify_mvaasconf
 		LD_LIBRARY_PATH=$vadplocation/lib $vadplocation/mvaasd -c $vadplocation/conf.d/mvaasd.conf -d 
 		$vadplocation/bin/reload_mvaasconf
 		;;
@@ -80,13 +96,11 @@ case ${cmd} in
 	restore)
 		echo "restore ."
 		;;
-	*)
-		start-stop-daemon -K --signal 15 --quiet --name mvaasd
-		start-stop-daemon -K --signal 15 --quiet --name openvpn
+	remove)
+		clear_refererconf
 		sed -i "s#\/usr\/bin\/gen_etc_network_interfaces;$reloadconf_path#\/usr\/bin\/gen_etc_network_interfaces#" /etc/CDF.xml
 		/etc/init.d/configer restart
 		;;
 esac
 
 exit 0
-

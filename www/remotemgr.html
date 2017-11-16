@@ -18,7 +18,7 @@
     </head>
     <body onload="loadCurrentSetting();">
 	<div style="width:600px" id="remoteMgrContent">
-		<form action="../cgi-bin/set_param.cgi" method="post" name="system_form" id="system_form">
+		<form action="../cgi-bin/set_mvaas_param.cgi" method="post" name="system_form" id="system_form">
 			<fieldset id="location">
 				<legend>
 					<strong><span title="symbol">Location</span></strong>
@@ -62,6 +62,15 @@
 						<td>
 							<input name="system_mvaas_registerserver_port" type="text" title="param,num,65535,1" size="5" maxlength="5"/>
 						</td>
+					</tr>
+					<tr>
+						<td>
+							<span>Redirect URL</span>:
+						</td>
+						<td>
+							<select name="system_mvaas_redirecturl" id="redirecturl">
+							</select>
+						</td>	
 					</tr>
 				</table>
 				<!-- <img id="advIcon" src="/pic/rightArrow.gif"/> 

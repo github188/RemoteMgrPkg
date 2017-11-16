@@ -1,10 +1,40 @@
 function loadCurrentSetting()
-{	
-	XMLHttpRequestObject.open("GET", "../cgi-bin/get_param.cgi", true);
+{
+	XMLHttpRequestObject.open("GET", "../cgi-bin/extrainfo.cgi", true);
 	XMLHttpRequestObject.setRequestHeader("If-Modified-Since","0");
 	XMLHttpRequestObject.send(null);
-	
-	loadlanguage();	
+	loadlanguage();
+}
+
+function creatRedirectOption()
+{
+	var vadpoption = vadp_module_name_and_url.split(",");
+	var idx = system_mvaas_redirecturl;
+	var select = document.getElementById('redirecturl');
+	var opt = document.createElement("option");
+	opt.value = 0;
+	opt.innerHTML = "Home (index.html)";
+	select.appendChild(opt);
+	for(var i=1; i<=vadp_module_number; i++)
+	{
+		var opt = document.createElement("option");
+		opt.value = i;
+		opt.innerHTML = vadpoption[i-1];
+		select.appendChild(opt);
+	}
+	if(select.options[idx] == null)
+	{
+		select.options[0].selected = true;
+	}
+	else
+	{
+		select.options[idx].selected = true;
+	}
+}
+
+function receivedone()
+{
+	creatRedirectOption();
 }
 
 function switchMode()
@@ -41,7 +71,16 @@ function submitform()
 	}*/
 	if (checkvalue() == 0)
 	{
-		$.post('../cgi-bin/set_param.cgi', $('#system_form').serialize());
+		$.post('../cgi-bin/set_mvaas_param.cgi',
+			$('#system_form').serialize(),
+			function(data)
+			{
+				if (data.indexOf("full") != -1)
+				{
+					alert("Referer list is full");
+				}
+			}
+			);
 	}
 
 	//form.submit();

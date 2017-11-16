@@ -4,3 +4,4 @@
 <system_mvaas_registerserver_port>443</system_mvaas_registerserver_port>
 <system_mvaas_logserver_address>127.0.0.1</system_mvaas_logserver_address>
 <system_mvaas_logserver_port>8833</system_mvaas_logserver_port>
+<system_mvaas_redirecturl>0</system_mvaas_redirecturl>
