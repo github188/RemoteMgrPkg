@@ -1,0 +1,6 @@
+<system_location_groupid>0</system_location_groupid>
+<system_location_deviceid>0</system_location_deviceid>
+<system_mvaas_registerserver_address>127.0.0.1</system_mvaas_registerserver_address>
+<system_mvaas_registerserver_port>443</system_mvaas_registerserver_port>
+<system_mvaas_logserver_address>127.0.0.1</system_mvaas_logserver_address>
+<system_mvaas_logserver_port>8833</system_mvaas_logserver_port>

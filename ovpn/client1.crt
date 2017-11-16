@@ -1,0 +1,75 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 2 (0x2)
+    Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C=TW, ST=TW, L=Taipei, O=Vivotek, OU=MVaaS, CN=Vivotek CA/name=EasyRSA/emailAddress=ezconnect@vivotek.com
+        Validity
+            Not Before: May  6 10:03:16 2015 GMT
+            Not After : May  3 10:03:16 2025 GMT
+        Subject: C=TW, ST=TW, L=Taipei, O=Vivotek, OU=MVaaS, CN=client/name=EasyRSA/emailAddress=ezconnect@vivotek.com
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (1024 bit)
+                Modulus:
+                    00:d8:e4:4b:db:4e:4b:31:2d:84:ca:b8:40:08:55:
+                    f9:5f:0e:84:d2:09:25:3f:b0:25:7e:b1:55:c3:79:
+                    2f:68:4a:57:48:1b:27:f7:6f:1c:f6:af:36:dc:fa:
+                    9f:30:2f:c7:87:27:19:e8:99:c6:89:8f:37:6d:44:
+                    93:5e:58:ff:23:1a:c6:b9:68:c5:e3:72:7e:0f:71:
+                    56:af:0c:b9:e1:e1:a3:19:2f:21:c4:54:06:00:4c:
+                    08:72:06:b1:b9:d4:54:68:90:2c:08:fc:64:dd:cb:
+                    51:8e:4d:d2:9b:24:b4:16:25:19:b2:2d:5d:a8:fe:
+                    8b:55:60:72:f2:f3:dd:21:07
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Basic Constraints: 
+                CA:FALSE
+            Netscape Comment: 
+                Easy-RSA Generated Certificate
+            X509v3 Subject Key Identifier: 
+                BA:C4:B9:93:FE:87:5C:E3:CF:7B:01:E8:05:31:64:8C:62:65:09:9D
+            X509v3 Authority Key Identifier: 
+                keyid:02:D7:A9:95:F0:B8:48:ED:8B:EE:4B:2B:D3:68:65:92:B5:CF:52:31
+                DirName:/C=TW/ST=TW/L=Taipei/O=Vivotek/OU=MVaaS/CN=Vivotek CA/name=EasyRSA/emailAddress=ezconnect@vivotek.com
+                serial:F8:EE:7C:5A:A4:76:25:9C
+
+            X509v3 Extended Key Usage: 
+                TLS Web Client Authentication
+            X509v3 Key Usage: 
+                Digital Signature
+            X509v3 Subject Alternative Name: 
+                DNS:client
+    Signature Algorithm: sha256WithRSAEncryption
+         44:f9:f4:fc:0e:4b:a0:ed:0f:f9:63:f6:13:29:5b:ab:69:f1:
+         71:cf:d8:f1:e4:e2:67:7a:f0:20:b3:78:16:77:6a:19:a4:2c:
+         52:3a:ad:9d:2e:9b:ad:01:bb:f7:3d:2c:15:c7:07:ef:26:b6:
+         8d:d1:7c:fc:33:76:e7:2f:9c:b0:84:6b:3f:cc:82:f4:da:e7:
+         58:a7:4f:a8:f1:37:43:bd:a5:14:81:a1:a2:37:ab:9d:69:e2:
+         9f:d0:ad:c5:ba:83:67:d5:c4:83:74:be:01:b5:16:2f:d7:ff:
+         af:59:2c:e9:1c:1c:95:bd:29:14:63:bd:4d:9c:da:0e:34:f0:
+         55:d4
+-----BEGIN CERTIFICATE-----
+MIIEDjCCA3egAwIBAgIBAjANBgkqhkiG9w0BAQsFADCBmjELMAkGA1UEBhMCVFcx
+CzAJBgNVBAgTAlRXMQ8wDQYDVQQHEwZUYWlwZWkxEDAOBgNVBAoTB1Zpdm90ZWsx
+DjAMBgNVBAsTBU1WYWFTMRMwEQYDVQQDEwpWaXZvdGVrIENBMRAwDgYDVQQpEwdF
+YXN5UlNBMSQwIgYJKoZIhvcNAQkBFhVlemNvbm5lY3RAdml2b3Rlay5jb20wHhcN
+MTUwNTA2MTAwMzE2WhcNMjUwNTAzMTAwMzE2WjCBljELMAkGA1UEBhMCVFcxCzAJ
+BgNVBAgTAlRXMQ8wDQYDVQQHEwZUYWlwZWkxEDAOBgNVBAoTB1Zpdm90ZWsxDjAM
+BgNVBAsTBU1WYWFTMQ8wDQYDVQQDEwZjbGllbnQxEDAOBgNVBCkTB0Vhc3lSU0Ex
+JDAiBgkqhkiG9w0BCQEWFWV6Y29ubmVjdEB2aXZvdGVrLmNvbTCBnzANBgkqhkiG
+9w0BAQEFAAOBjQAwgYkCgYEA2ORL205LMS2EyrhACFX5Xw6E0gklP7AlfrFVw3kv
+aEpXSBsn928c9q823PqfMC/HhycZ6JnGiY83bUSTXlj/IxrGuWjF43J+D3FWrwy5
+4eGjGS8hxFQGAEwIcgaxudRUaJAsCPxk3ctRjk3SmyS0FiUZsi1dqP6LVWBy8vPd
+IQcCAwEAAaOCAWQwggFgMAkGA1UdEwQCMAAwLQYJYIZIAYb4QgENBCAWHkVhc3kt
+UlNBIEdlbmVyYXRlZCBDZXJ0aWZpY2F0ZTAdBgNVHQ4EFgQUusS5k/6HXOPPewHo
+BTFkjGJlCZ0wgc8GA1UdIwSBxzCBxIAUAteplfC4SO2L7ksr02hlkrXPUjGhgaCk
+gZ0wgZoxCzAJBgNVBAYTAlRXMQswCQYDVQQIEwJUVzEPMA0GA1UEBxMGVGFpcGVp
+MRAwDgYDVQQKEwdWaXZvdGVrMQ4wDAYDVQQLEwVNVmFhUzETMBEGA1UEAxMKVml2
+b3RlayBDQTEQMA4GA1UEKRMHRWFzeVJTQTEkMCIGCSqGSIb3DQEJARYVZXpjb25u
+ZWN0QHZpdm90ZWsuY29tggkA+O58WqR2JZwwEwYDVR0lBAwwCgYIKwYBBQUHAwIw
+CwYDVR0PBAQDAgeAMBEGA1UdEQQKMAiCBmNsaWVudDANBgkqhkiG9w0BAQsFAAOB
+gQBE+fT8Dkug7Q/5Y/YTKVurafFxz9jx5OJnevAgs3gWd2oZpCxSOq2dLputAbv3
+PSwVxwfvJraN0Xz8M3bnL5ywhGs/zIL02udYp0+o8TdDvaUUgaGiN6udaeKf0K3F
+uoNn1cSDdL4BtRYv1/+vWSzpHByVvSkUY71NnNoONPBV1A==
+-----END CERTIFICATE-----

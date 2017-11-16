@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root title="Remote-Management">
+	<index>
+		<link>remotemgr.html</link>
+	</index>
+	<remote_management>
+        <link>remotemgr.html</link>
+    </remote_management>
+</root>

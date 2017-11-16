@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="./css/jquery-ui-themeroller.css" rel="stylesheet" type="text/css" />
+		<link href="./css/default.css" rel="stylesheet" type="text/css" />
+        <!-- Load common JavaScript -->
+        <script type="text/javascript" src="./include/common.js"></script>
+		<script type="text/javascript" src="./include/jquery-1.10.2.min.js"></script>
+        <!--UI libs-->
+		<script type="text/javascript" src="./include/remote_mgr.js"></script>
+		
+		<style type="text/css">
+			table td{padding:5px;}
+		</style>
+    	
+    </head>
+    <body onload="loadCurrentSetting();">
+	<div style="width:600px" id="remoteMgrContent">
+		<form action="../cgi-bin/set_param.cgi" method="post" name="system_form" id="system_form">
+			<fieldset id="location">
+				<legend>
+					<strong><span title="symbol">Location</span></strong>
+				</legend>
+				<table id="localTable" style="table-layout:fixed" width="80%">
+					<tr>
+						<td>
+							<span>Group ID</span>:
+						</td>
+						<td>
+							<input id="groupid" name="system_location_groupid" type="text" title="param,string,strict" size="40" maxlength="128"/>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<span>Device ID</span>:
+						</td>
+						<td>
+							<input id="deviceid" name="system_location_deviceid" type="text" title="param,string,strict" size="40" maxlength="128"/>
+						</td>
+					</tr>
+				</table>
+			</fieldset>
+			<fieldset id="remoteManagementPortal">
+				<legend>
+					<strong><span>Remote Management Portal</span></strong>
+				</legend>
+				<table id="portalServerTable" style="table-layout:fixed" width="80%">
+					<tr>
+						<td>
+							<span>Register server address</span>:
+						</td>
+						<td>
+							<input name="system_mvaas_registerserver_address" type="text" title="param,string2" size="40" maxlength="128"/>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<span>Register server port</span>:
+						</td>
+						<td>
+							<input name="system_mvaas_registerserver_port" type="text" title="param,num,65535,1" size="5" maxlength="5"/>
+						</td>
+					</tr>
+				</table>
+				<!-- <img id="advIcon" src="/pic/rightArrow.gif"/> 
+				<span title="" class="pointer" onclick="switchMode();">Advanced setting</span> -->
+				<div id="alg_advanced_setting" style="display:none;">
+					<table id="portalLogTable" style="table-layout:fixed" width="80%">
+						<tr>
+							<td>
+								<span>Log server address</span>:
+							</td>
+							<td>
+								<input name="system_mvaas_logserver_address" type="text" title="param,string2" size="40" maxlength="128"/>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<span>Log server port</span>:
+							</td>
+							<td>
+								<input name="system_mvaas_logserver_port" type="text" title="param,num,65535,1" size="5" maxlength="5"/>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</fieldset>
+			<input style="width:70px;float:right" type="button" title="symbol" onclick="submitform();" value="Save"/>
+		</form>
+	</div>
+	<iframe name="ret_page" style="display:none"></iframe>
+	<div id="blocker" class="block"></div>
+	</body>
+</html>

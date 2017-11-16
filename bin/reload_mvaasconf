@@ -1,0 +1,33 @@
+#!/bin/sh
+location=$(dirname $(readlink -f $0))
+ACCESS_MVAASD_CONF="$location/set_mvaasconf"
+MVAASD_XML="$location/../mvaas.xml"
+
+#---- VVTK Platfom dependence	---
+DEV_ID=`confclient -p 99 -g system_info_serialnumber|awk -F'=' '{print $2}'`
+DEV_FW=`confclient -p 99 -g system_info_firmwareversion|awk -F'=' '{print $2}'`
+DEV_IP=`confclient -p 99 -g network_ipaddress|awk -F'=' '{print $2}'`
+DEV_HTTPPORT=`confclient -p 99 -g network_http_alternateport|awk -F'=' '{print $2}'`
+DEV_HTTPSPORT=`confclient -p 99 -g network_https_port|awk -F'=' '{print $2}'`
+DEV_HTTPAUTH=`confclient -p 99 -g network_http_authmode|awk -F'=' '{print $2}'`
+DEV_RTSPPORT=`confclient -p 99 -g network_rtsp_port|awk -F'=' '{print $2}'`
+DEV_REGISTERSERVER_ADDRESS=`grep 'system_mvaas_registerserver_address' $MVAASD_XML | sed 's/<system_mvaas_registerserver_address>\(.*\)<\/system_mvaas_registerserver_address>/\1/'`
+DEV_REGISTERSERVER_PORT=`grep 'system_mvaas_registerserver_port' $MVAASD_XML | sed 's/<system_mvaas_registerserver_port>\(.*\)<\/system_mvaas_registerserver_port>/\1/'`
+DEV_LOGSERVER_ADDRESS=`grep 'system_mvaas_logserver_address' $MVAASD_XML | sed 's/<system_mvaas_logserver_address>\(.*\)<\/system_mvaas_logserver_address>/\1/'`
+DEV_LOGSERVER_PORT=`grep 'system_mvaas_logserver_port' $MVAASD_XML | sed 's/<system_mvaas_logserver_port>\(.*\)<\/system_mvaas_logserver_port>/\1/'`
+#----	VVTK Platfom dependence	End---
+
+$ACCESS_MVAASD_CONF "DeviceID" $DEV_ID
+$ACCESS_MVAASD_CONF "DeviceFWVersion" $DEV_FW
+$ACCESS_MVAASD_CONF "DeviceIPAddress" $DEV_IP
+$ACCESS_MVAASD_CONF "DeviceHTTPPort" $DEV_HTTPPORT
+$ACCESS_MVAASD_CONF "DeviceHTTPSPort" $DEV_HTTPSPORT
+$ACCESS_MVAASD_CONF "DeviceRTSPPort" $DEV_RTSPPORT
+$ACCESS_MVAASD_CONF "DeviceHTTPAuthMode" $DEV_HTTPAUTH
+$ACCESS_MVAASD_CONF "RegisterServerAddress" $DEV_REGISTERSERVER_ADDRESS
+$ACCESS_MVAASD_CONF "RegisterServerPort" $DEV_REGISTERSERVER_PORT
+$ACCESS_MVAASD_CONF "LogServerAddress" $DEV_LOGSERVER_ADDRESS
+$ACCESS_MVAASD_CONF "LogServerPort" $DEV_LOGSERVER_PORT
+
+#Extra info reload
+$ACCESS_MVAASD_CONF "ActExtraInfoUpdate" 1

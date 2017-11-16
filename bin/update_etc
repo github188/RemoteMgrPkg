@@ -1,0 +1,374 @@
+#!/bin/sh
+
+GEN_NETWORK_INTERFACES=/usr/bin/gen_etc_network_interfaces
+TEMP_DIR=/mnt/ramdisk/tmp
+CONFIGER=/etc/init.d/configer
+REMOVE_RTSPSDPLINK=/usr/bin/remove_rtspsdplink
+CONFCLIENT=/usr/sbin/confclient
+CONFIGDIR=/tmp/config
+CONFIGFILE=${CONFIGDIR}/uservalue.xml
+CONFIGFILE_TAR_GZ=${CONFIGDIR}.tar.gz
+use_default_userpass()
+{
+        # For MVaaS field try
+        ACCOUNTMGR="/usr/sbin/accountmgr"
+        UPDATE_SECURITY="/usr/bin/update_security"
+        ROOT_PASS="root"
+        MVAAS_ACCOUNT="vivotekmvaas"
+        MVAAS_PASS="vivotekmvaas"
+        MVAAS_PRIV="admin"
+        ${ACCOUNTMGR} -n root -e passwd -x "${ROOT_PASS}"
+        ${ACCOUNTMGR} -a -n "${MVAAS_ACCOUNT}" -x "${MVAAS_PASS}" -r "${MVAAS_PRIV}"
+        ${CONFCLIENT} -p 99 -b -s "security_user_i1_name=${MVAAS_ACCOUNT}&security_user_i1_pass=${MVAAS_PASS}&security_user_i1_privilege=${MVAAS_PRIV}"
+        $UPDATE_SECURITY
+}
+
+################################# Define the backup except settings #################################
+
+############################
+# backup system parameters #
+############################
+
+# system parameters
+RESTORE_EXCEPT_NET_SYS_PARAS="network_type&network_resetip&network_ipaddress&network_subnet&network_router&network_dns1&network_dns2&network_wins1&network_wins2&network_pppoe&network_ipv6&upnppresentation_enable&upnpportforwarding_enable&network_http_port&network_http_alternateport&network_https_port&network_ftp_port&network_sip_port&wireless"
+RESTORE_EXCEPT_DST_SYS_PARAS="system_timezoneindex&system_daylight"
+RESTORE_EXCEPT_LANG_SYS_PARAS="system_info_customlanguage"
+RESTORE_EXCEPT_VADP_SYS_PARAS="vadp"
+
+#########################################
+# backup files                          #
+# separate backup file with white-space #
+#########################################
+
+# backup files
+RESTORE_EXCEPT_NET_BACKUP_FILES="/etc/conf.d/ssl/cacert.pem /etc/conf.d/ssl/client_cert.pem /etc/conf.d/ssl/client_key.pem  /etc/network/wpa_supplicant_wireless.conf /etc/network/wireless.conf"
+RESTORE_EXCEPT_DST_BACKUP_FILES="/etc/conf.d/config_dst.xml"
+RESTORE_EXCEPT_LANG_BACKUP_FILES="/mnt/flash/www/include/custom_translator.xml"
+RESTORE_EXCEPT_FOCUSVALUE_BACKUP_FILES="/etc/conf.d/remotefocusd/remotefocusd.conf"
+MVAAS_RESET_FILE="/mnt/flash/mvaas.reset"
+
+############################################################
+# functions which should be executed before backup process #
+############################################################
+
+# restore default except "pre" functions
+#RESTORE_EXCEPT_NET_PRE_FUNCTION()
+#{
+#	$REMOVE_RTSPSDPLINK
+#}
+
+############################################################
+# functions which should be executed after backup process  #
+############################################################
+
+# restore default except "post" functions
+RESTORE_EXCEPT_NET_POST_FUNCTION()
+{
+	echo "RESTORE_EXCEPT_NET_POST_FUNCTION"
+	# update netwrok interfaces
+    /usr/bin/check_fwmode upgrade # only update symbolic cfg files
+	$GEN_NETWORK_INTERFACES
+
+	/usr/bin/gen_papsecrets
+
+	# build link for RTSP sdp
+	cd /mnt/flash/www
+	ln -s /tmp/live.sdp live.sdp
+	ln -s /tmp/live2.sdp live2.sdp
+}
+# restore custom webpage files
+backup_web_files()
+{
+	if [ "$1" = "backup" ]; then
+		echo "Backup web files"
+		if [ -f /mnt/flash/www/include/custom_translator.xml ]; then
+			cp /mnt/flash/www/include/custom_translator.xml /mnt/flash2
+		fi
+		if [ -f /mnt/flash/www/pic/custom_logo.jpg ]; then
+			cp /mnt/flash/www/pic/custom_logo.jpg /mnt/flash2
+		fi
+	elif [ "$1" = "restore" ]; then
+		echo "Restore web files"
+		if [ -f /mnt/flash2/custom_translator.xml ]; then
+			mkdir -p /mnt/flash/www/include/
+			cp /mnt/flash2/custom_translator.xml /mnt/flash/www/include/custom_translator.xml
+		fi
+		if [ -f /mnt/flash2/custom_logo.jpg ]; then
+			mkdir -p /mnt/flash/www/pic/
+			cp /mnt/flash2/custom_logo.jpg /mnt/flash/www/pic/custom_logo.jpg
+		fi
+	fi
+}
+
+################################# End of the backup except settings #################################
+
+# Execute functions one after one
+RESTORE_EXCEPT_WORKING_FUNCTION()
+{
+	for FUN_ARGS in $*
+	do
+		eval $FUN_ARGS
+	done
+}
+
+ETCFILE=/mnt/ramdisk/etc.tar
+UNTAR_DEFAULT_ETC ()
+{
+	flashmgr readdefconf $ETCFILE
+	tar jxf $ETCFILE
+}
+
+for ARGS in $*
+do
+	eval OPTIONS=\$"$ARGS"_SYS_PARAS
+	RESTORE_EXCEPT_OPTIONS="$RESTORE_EXCEPT_OPTIONS""&$OPTIONS"
+	
+	eval FILES=\$"$ARGS"_BACKUP_FILES
+	RESTORE_EXCEPT_FILES="$RESTORE_EXCEPT_FILES"" ""$FILES"
+
+	RESTORE_EXCEPT_PRE_FUN_STRS="$RESTORE_EXCEPT_PRE_FUN_STRS"" ""$ARGS""_PRE_FUNCTION"
+	
+	RESTORE_EXCEPT_POST_FUN_STRS="$RESTORE_EXCEPT_POST_FUN_STRS"" ""$ARGS""_POST_FUNCTION"
+	
+done
+echo "except options... $RESTORE_EXCEPT_OPTIONS"
+
+
+if [ "$1" != "restore" -a "$1" != "upgrade" -a "$1" != "restorefromflash2" ]
+then
+	$CONFIGER start
+	sleep 1
+
+	$REMOVE_RTSPSDPLINK
+	
+	# Preparations before backup starts
+	RESTORE_EXCEPT_WORKING_FUNCTION $RESTORE_EXCEPT_PRE_FUN_STRS
+	
+	cd /mnt/flash
+	
+	# backup system parameters
+		echo "backup system parameters"
+		$CONFCLIENT -g $RESTORE_EXCEPT_OPTIONS -t XML -p 7 > /tmp/uservalue.xml
+
+	# backup files
+	for backupfiles in $RESTORE_EXCEPT_FILES
+	do
+		cp $backupfiles /tmp/
+	done
+
+	for inputs in $(seq 1 $#); do
+		eval restore_opt=\$$inputs
+		case ${restore_opt} in
+			RESTORE_EXCEPT_DST)
+				cp /mnt/flash/etc/conf.d/event/task/daylight_task.xml /tmp/
+				except_dst="yes"
+				;;
+			RESTORE_EXCEPT_VADP)
+				except_vadp="yes"
+				;;
+			*)
+				;;
+		esac
+	done
+
+	# Update recordingToken status
+	/usr/bin/update_recordingtoken restore mark
+
+	# stop configer before removing conf files
+	$CONFIGER stop
+	rm -rf etc
+  
+	# uncompress default etc files  
+	UNTAR_DEFAULT_ETC
+
+	# start configer before applying user settings(backups)
+	$CONFIGER start
+	sleep 1
+	
+	# apply user settings(backups)
+		$CONFCLIENT -a $RESTORE_EXCEPT_OPTIONS -t XML -p 7 -f /tmp/uservalue.xml
+	
+	for backupfiles in $RESTORE_EXCEPT_FILES
+	do
+		FILENAME=${backupfiles##/*/}
+		cp /tmp/$FILENAME $backupfiles
+	done
+	
+	if [ "$except_dst" = "yes" ]
+	then
+		cp /tmp/daylight_task.xml /mnt/flash/etc/conf.d/event/task/
+	fi
+
+	# Remaining jobs after backup ends
+	RESTORE_EXCEPT_WORKING_FUNCTION $RESTORE_EXCEPT_POST_FUN_STRS
+	rm /mnt/flash/www/pic/custom_logo.jpg
+    use_default_userpass
+	# Clear VADP modules
+	if [ "${except_vadp}" == "yes" ]
+	then
+		echo "Update VADP settings to boa.conf"
+		/usr/bin/upload_vadp updateboa
+	else
+		echo "Remove VADP modules"
+		rm -rf /mnt/flash2/vadp
+		rm -rf /mnt/auto/CF/vadp
+		rm -rf /mnt/flash2/unifs
+	fi
+fi
+
+if [ "$1" = "restore" ]
+then
+	[ -f $MVAAS_RESET_FILE ] && mvaas_reset="1"
+	echo "=================  mvaas_reset = ${mvaas_reset}  ======================"
+	umount /mnt/flash
+	ubiupdatevol -t /dev/ubi0_0
+	# FIXME: why ubiupdatevol fail 
+	if [ "$?" != "0" ]; then		
+		ubidetach /dev/ubi_ctrl -m 2 
+		flash_eraseall /dev/mtd2 > /dev/null && echo /dev/mtd2 erase Done!!
+		ubiattach /dev/ubi_ctrl -m 2
+		ubimkvol /dev/ubi0 -N flashfs -m
+	fi
+	mount /mnt/flash
+    [ $mvaas_reset = "1" ] && touch $MVAAS_RESET_FILE
+#    umount /mnt/flash2
+#    ubiupdatevol -t /dev/ubi1_0
+	cd /mnt/flash
+	UNTAR_DEFAULT_ETC
+	# Change date to default, for test program
+	date 010100002013
+    use_default_userpass
+	# Remove VADP data
+	rm -rf /mnt/flash2/vadp
+	rm -rf /mnt/auto/cf/vadp
+	rm -rf /mnt/flash2/unifs
+	/usr/bin/update_recordingtoken restore mark
+fi
+
+if [ "$1" = "upgrade" ]
+then
+	flash_eraseall /dev/mtd2 > /dev/null && echo /dev/mtd2 erase Done!!
+	ubiattach /dev/ubi_ctrl -m 2
+	ubimkvol /dev/ubi0 -N flashfs -m
+#    ubiupdatevol -t /dev/ubi0:flashfs
+	mount /mnt/flash
+	cd /mnt/flash
+
+	# uncompress default etc files  
+	UNTAR_DEFAULT_ETC
+    # start configer before applying user settings(backups)
+	$CONFIGER start
+	sleep 1
+
+	#http_authmode=`$CONFCLIENT -g network_http_authmode -p 7 -t Value`
+	#rtsp_authmode=`$CONFCLIENT -g network_rtsp_authmode -p 7 -t Value`
+	http_authmode="basic"
+	rtsp_authmode="basic"	
+
+	if flashmgr readtempconf ${CONFIGFILE_TAR_GZ}
+	then
+		# start configer before applying user settings(backups)
+		$CONFIGER start
+		sleep 1
+
+		# apply user settings(backups)
+		cd /tmp
+		tar zxf ${CONFIGFILE_TAR_GZ}
+		n=0
+		until $CONFCLIENT -a root -t XML -p 7 -f ${CONFIGFILE} > /dev/null
+		do
+			n=$(( $n + 1 ))
+			if [ "$n" -gt 99 ]; then
+				break
+			fi
+		done
+		echo $n
+        $CONFCLIENT -s "network_http_authmode=${http_authmode}&network_rtsp_authmode=${rtsp_authmode}" -p 7
+	
+	    #sync alternateport to connect in stunnel.conf
+	    http_alternateport=`$CONFCLIENT -g network_http_alternateport -t Value -p 99`
+	    sed -i "s/^.*connect =.*/connect = $http_alternateport/" /etc/conf.d/stunnel.conf
+		/usr/bin/update_privilege accountmgr_conf
+		cp ${CONFIGDIR}/passwd /mnt/flash/etc
+		cp ${CONFIGDIR}/group /mnt/flash/etc
+		cp ${CONFIGDIR}/services /mnt/flash/etc
+		cp ${CONFIGDIR}/ssapivov /mnt/flash/etc
+        cp ${CONFIGDIR}/boa.conf /mnt/flash/etc/boa/boa.conf
+		cp -rf ${CONFIGDIR}/task /mnt/flash/etc/conf.d/event/
+		cp -rf ${CONFIGDIR}/ssl /mnt/flash/etc/conf.d/
+		cp ${CONFIGDIR}/wpa_supplicant_wireless.conf /mnt/flash/etc/network
+
+        BACKUP_FILES='config_dst.xml certificate.info privatekey.pem publickey.cert publickey.req remotefocusd'
+        for backup in $BACKUP_FILES
+        do
+            cp -r ${CONFIGDIR}/${backup} /mnt/flash/etc/conf.d
+        done
+
+		if [ -f ${CONFIGDIR}/custom_translator.xml ]; then
+			mkdir -p /mnt/flash/www/include/
+			cp ${CONFIGDIR}/custom_translator.xml /mnt/flash/www/include/custom_translator.xml
+		fi
+		if [ -f ${CONFIGDIR}/custom_logo.jpg ]; then
+			mkdir -p /mnt/flash/www/pic/
+			cp ${CONFIGDIR}/custom_logo.jpg /mnt/flash/www/pic/custom_logo.jpg
+		fi
+
+		/usr/bin/set_http_attraction
+		# update network interfaces
+		$GEN_NETWORK_INTERFACES
+		/usr/bin/gen_upnpdd_conf
+		/usr/bin/gen_papsecrets
+		/usr/bin/gen_ddnsc_conf
+		# initial remote syslog
+		/usr/bin/remote_syslog
+		/usr/bin/update_vcodectype
+		/usr/bin/update_audiomute
+		/usr/bin/update_acodectype
+		/usr/bin/update_recordingtoken upgrade mark
+		/usr/bin/update_rtspaccessname 0
+		/usr/bin/update_rtspaccessname 1
+		/usr/bin/update_rtspaccessname 2
+		/usr/bin/update_rtspaccessname 3
+		/usr/bin/update_rtspaccessname 4
+		/usr/bin/update_httpsport
+		# update VADP settings to boa.conf
+		mount /mnt/flash2
+		if [ "$?" == "0" ]; then
+			/usr/bin/upload_vadp upgradefw
+		fi
+		rm -rf /mnt/flash2/unifs
+	fi
+
+	echo "normal" >> /mnt/flash/.RemotefocusStatus
+fi
+
+if [ "$1" = "restorefromflash2" ]
+then
+	BACKUP_FILES='config_dst.xml certificate.info privatekey.pem publickey.cert publickey.req bitmask_320x240.y'
+	for backup in $BACKUP_FILES
+	do
+		cp /mnt/flash2/${backup} /etc/conf.d
+	done
+
+	# restore customized script
+	#BACKUP_CUSTOM_SCRIPT='User1.xml User2.xml User3.xml'
+	#for backup_custom in $BACKUP_CUSTOM_SCRIPT
+	#do
+	#	cp /mnt/flash2/${backup_custom} /etc/conf.d/event/task
+	#done
+	
+	# restore 802.1x file
+	BACKUP_SSL_FILE='cacert.pem client_cert.pem client_key.pem'
+	for backup_ssl in $BACKUP_SSL_FILE
+	do
+		cp /mnt/flash2/${backup_ssl} /etc/conf.d/ssl
+	done
+
+	backup_web_files "restore"
+
+	#Clean /mnt/flash2
+	rm -rf /mnt/flash2/*
+
+fi
+
+touch /mnt/flash2/restore.vadppkg.tag

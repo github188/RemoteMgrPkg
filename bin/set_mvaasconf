@@ -1,0 +1,13 @@
+#!/bin/sh
+### Do not use this script to update value contain with escape character(/\* ) such as script command or URL  
+### Sample usage: 
+### 	./set_mvaasdconf.sh "DeviceIPAddress" "172.19.2.35"
+###     ./set_mvaasdconf.sh "DeviceHTTPPort" "554"
+###     ./set_mvaasdconf.sh "ActEZConnectAccountReset" "1"
+
+location=$(dirname $(readlink -f $0))
+MVAASD_CONF="$location/../conf.d/mvaasd.conf"
+CONF_KEY=$1
+CONF_VALUE=$2
+
+sed -i -e "s/^$CONF_KEY\([ \t]*\).*/$CONF_KEY\1$CONF_VALUE/" $MVAASD_CONF

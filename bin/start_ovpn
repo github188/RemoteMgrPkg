@@ -1,0 +1,14 @@
+#!/bin/sh
+
+location=$(dirname $(readlink -f $0))
+OVPN="$location/../ovpn/openvpn"
+OVPN_CONF="$location/../conf.d/openvpn.conf"
+
+server_ip=$1
+server_port=$2
+vpn_protocol=$3
+
+killall -9 openvpn
+sed -i -e "s/^remote\([ \t]*\).*/remote\1$server_ip\1$server_port/" $OVPN_CONF
+sed -i -e "s/^proto\([ \t]*\).*/proto\1$vpn_protocol/" $OVPN_CONF
+$OVPN --config $OVPN_CONF &

@@ -1,0 +1,2479 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<trunk>anubis</trunk>
+<branch>main</branch>
+<translator_version>0.1.4.26</translator_version>
+<system>
+<info>
+<language>
+<count>9</count>
+<i0>English</i0>
+<i1>Deutsch</i1>
+<i2>Español</i2>
+<i3>Français</i3>
+<i4>Italiano</i4>
+<i5>日本語</i5>
+<i6>Português</i6>
+<i7>简体中文</i7>
+<i8>繁體中文</i8>
+<i9/>
+<i10/>
+<i11/>
+<i12/>
+<i13/>
+<i14/>
+<i15/>
+<i16/>
+<i17/>
+<i18/>
+<i19/>
+</language>
+</info>
+</system>
+<lang>
+<remote_management>Remote management</remote_management>
+<add>Add</add>
+<algorithm_settings>Algorithm Settings</algorithm_settings>
+<cancel>Cancel</cancel>
+<camera_installation>Camera Installation</camera_installation>
+<change_direction>Change direction</change_direction>
+<close>Close</close>
+<configurations>Configurations</configurations>
+<counting_report>Counting report</counting_report>
+<csv>csv</csv>
+<date>Date</date>
+<day>Day</day>
+<today>Today</today>
+<delete>Delete</delete>
+<direction>Direction</direction>
+<export_data>Export data</export_data>
+<export_files>Export files</export_files>
+<option_localtime_utc>UTC time</option_localtime_utc>
+<option_localtime_local>Camera local</option_localtime_local>
+<enable_visual_confirmation>Visual confirmation of object</enable_visual_confirmation>
+<enable_periodic_alarm>Enable periodic alarm</enable_periodic_alarm>
+<event_list>Event List</event_list>
+<exceed_field_point_num>Exceed the maximum number of points: 20</exceed_field_point_num>
+<database_preparing_please_try_later>Database is preparing. Please try again later.</database_preparing_please_try_later>
+<loading_hint>loading data ...</loading_hint>
+<format>Format</format>
+<from>From</from>
+<hour>Hour</hour>
+<in>In</in>
+<interval>Interval</interval>
+<invalid_roi>Invalid ROI</invalid_roi>
+<iva_analytics>Analytics</iva_analytics>
+<iva_eventdb>Event</iva_eventdb>
+<iva_report>Report</iva_report>
+<iva_rule_name>Rule name</iva_rule_name>
+<iva_rule_type>Rule type</iva_rule_type>
+<iva_rules>Rules</iva_rules>
+<iva_statistic>Statistic</iva_statistic>
+<iva_statistic_describe_objcount>Statistics</iva_statistic_describe_objcount>
+<iva_system>IVA System</iva_system>
+<json>json</json>
+<maximum_object_size>Maximum object size</maximum_object_size>
+<min15>15 minutes</min15>
+<minimum_object_size>Minimum object size</minimum_object_size>
+<min_obj_size_larger_than_max_obj_size>Minimize object size can't be larger than Maximize object size</min_obj_size_larger_than_max_obj_size>
+<minute>Minute</minute>
+<name>Name</name>
+<out>Out</out>
+<roi>Detection area</roi>
+<remove>Remove</remove>
+<report>Report</report>
+<report_time>Report time</report_time>
+<reset_time_interval>Reset every</reset_time_interval>
+<report_time_interval>Report every</report_time_interval>
+<save>Save</save>
+<search>Search</search>
+<search_result>Search result</search_result>
+<seconds>Seconds</seconds>
+<sensitivity>Sensitivity</sensitivity>
+<stop_search>Stop search</stop_search>
+<time>Time</time>
+<to>To</to>
+<toggle>Toggle</toggle>
+<type>Type</type>
+<upload_files>Upload files</upload_files>
+<username>Username</username>
+<setting>Setting</setting>
+<password>Password</password>
+<last_time>Last time</last_time>
+<line_ref>Reference line</line_ref>
+<ss_map_label>Start-Stop map</ss_map_label>
+<ss_map_unit>pairs</ss_map_unit>
+<empty_data>Empty data, no people have been detected yet.</empty_data>
+<internal_error>Get Start-Stop Map pairs failed due to internal error.</internal_error>	
+<loiter_alarm_interval>Alarm interval</loiter_alarm_interval>
+<loitering_duration>Loitering duration</loitering_duration>
+<xml>xml</xml>
+<!-- Penlin addition when 2015/10/12 for event_push page -->
+	<!-- event_push.html required -->
+<Servers>Servers</Servers>
+<status>status</status>
+<server_name>Name</server_name>
+<server_protocol>Protocol</server_protocol>
+<address_location>Address</address_location>
+<report_aggregation>Aggregation Level</report_aggregation>
+<report_schedule>Delivery Schedule</report_schedule>
+<report_schedule_note>schedule time must be loner than or equal with aggregation level</report_schedule_note>
+<report_format>Format</report_format>
+<report_lite>Lite</report_lite>
+<report_lite_note>lite mode would ignore date with all zero in/out.</report_lite_note>
+<report_localtime>localtime</report_localtime>
+<report_localtime_note>Represent StartTime, EndTime in camera local time zone with ISO8601 format. Or defaultly in UTC time. </report_localtime_note>
+<ServerConfigurations>Configurations</ServerConfigurations>
+<server_address>Server address</server_address>
+<user_name>Username</user_name>
+<!--password></password-->
+<server_port>Port</server_port>
+<email>Email</email>
+<sender_email_address>Sender email</sender_email_address>
+<recipient_email_address>Recipient email</recipient_email_address>
+<ftp>FTP</ftp>
+<remote_folder_name>FTP folder name</remote_folder_name>
+<reportname_format>Filename format</reportname_format>
+<filename_format_note>support customize report filename format: [default: report_%T.%F] &lt;br&gt;%T: report timestamp;  %M: Mac address;  %D: DeviceID;  %G: GroupID&lt;br&gt;%S: Schedule time in second;  %A: Aggregation level in second&lt;br&gt;%N: Server name;  %F: report format;  %L: LITE or empty</filename_format_note>
+<http>HTTP</http>
+<url>Server address</url>
+<server_uri>Server uri</server_uri>
+
+<test>Test</test>
+<!--close></close-->
+<!--save></save-->
+	<!-- livereport.html required -->
+<enabled_di_task_to_switch_counting_feature>Enable Digital Input (DI) to switch Counting On/Off</enabled_di_task_to_switch_counting_feature>
+<minimum_signal_interval>Mininum DI signal detection interval : </minimum_signal_interval>
+<starttime>StartTime</starttime>
+<endtime>EndTime  </endtime>
+<now>Now</now>
+<counting_data_pull>Pull Event</counting_data_pull>
+<send>Send</send>
+<get_cgi>CGI</get_cgi>
+<localtime>local time</localtime>
+<invalid_starttime_format>You have used an invalid format for StartTime!</invalid_starttime_format>
+<invalid_endtime_format>You have used an invalid format for EndTime</invalid_endtime_format>
+	<!-- common.js required -->
+<you_have_used_invalid_characters_lg>You have used invalid characters. These invalid characters are: \, /, :, *, ., ?, &quot;, ', &lt;, &gt;, &amp;, |</you_have_used_invalid_characters_lg>
+<you_have_used_invalid_characters_sh>You have used invalid characters. These invalid characters are: &quot;, ', &lt;, &gt;, &amp;</you_have_used_invalid_characters_sh>
+<you_have_used_invalid_characters_host>You have used invalid characters. These invalid characters are: &quot;, ', &lt;, &gt;, =, &amp;</you_have_used_invalid_characters_host>
+<field_cannot_be_empty>This field cannot be empty</field_cannot_be_empty>
+<space_is_invalid>Do not type a space key in the field.</space_is_invalid>
+<accessname_can_only_contains_numeric_alpha>Only numeric and alphabetical characters are allowed for access name.</accessname_can_only_contains_numeric_alpha>
+<please_input_a_valid_email_address>Please input a valid email address.</please_input_a_valid_email_address>
+<please_input_a_valid_value>Please input a valid value.</please_input_a_valid_value>
+<please_input_a_value_between_0_and_255>Please input a value between 0 and 255</please_input_a_value_between_0_and_255>
+<please_enter_a_valid_ip_address>Please enter a valid IP address.</please_enter_a_valid_ip_address>
+
+	<!-- event_push.js required -->
+<you_have_used_invalid_characters_servername>You have used invalid characters. These invalid characters are: \, /, :, *, ?, &quot;, ', &lt;, &gt;, &amp;, |, %</you_have_used_invalid_characters_servername>
+<you_have_used_invalid_characters_folder>You have used invalid characters. These invalid characters are:  /, :, *,?, &quot;, ', &lt;, &gt;, &amp;, |</you_have_used_invalid_characters_folder>
+<you_have_used_invalid_characters_foldername>You have used invalid characters. These invalid characters are: :, *, ?, &quot;, ', &lt;, &gt;, &amp;, |,  (space)</you_have_used_invalid_characters_foldername>
+<you_have_used_invalid_characters_fileformat>You have used invalid characters. These invalid characters are: \, /, :, *, ?, &quot;, ', &lt;, &gt;, &amp;, |</you_have_used_invalid_characters_fileformat>
+<your_have_used_name_with_too_long_or_short_length>You have input a name in too long or too short length!</your_have_used_name_with_too_long_or_short_length>
+<you_have_used_fileformat_without_time_variable_T>Warning! You have used a filename without time variable %T. This might cause your reports be overridden!</you_have_used_fileformat_without_time_variable_T>
+<invalid_protocol>Please Choose a valid Protocol!</invalid_protocol>
+<invalid_schedule_time>schedule time must be larger than aggregation level!</invalid_schedule_time>
+<!-- End of Addition -->
+<!-- Penlin addition when 2015/11/03 for event_setting page -->
+<event_name>Event name</event_name>
+<enable_this_event>Enable this event</enable_this_event>
+<enable_this_recording>Enable this recording</enable_this_recording>
+<enable_this_trigger>Enable this trigger</enable_this_trigger>
+<priority>Priority</priority>
+<high>High</high>
+<normal>Normal</normal>
+<low>Low</low>
+<delay_for>Detect next event trigger after</delay_for>
+<seconds>seconds</seconds>
+<seconds_before_detecting_next_event>second(s).</seconds_before_detecting_next_event>
+<seconds_before_recording> seconds before recording</seconds_before_recording>
+<schedule>Schedule</schedule>
+<trigger>Trigger</trigger>
+<trigger_D_O_1_for>Trigger digital output 1 for</trigger_D_O_1_for>
+<trigger_D_O_2_for>Trigger digital output 2 for</trigger_D_O_2_for>
+<trigger_D_O_for>Trigger digital output for</trigger_D_O_for>
+<trigger_duration>Trigger duration</trigger_duration>
+<trigger_event_when_detected_audio>Trigger event when detected audio</trigger_event_when_detected_audio>
+<trigger_every>Trigger every other</trigger_every>
+<trigger_name>Trigger name</trigger_name>
+<trigger_settings>Trigger Settings</trigger_settings>
+<trigger_time>Trigger time</trigger_time>
+<trigger_type>Trigger type</trigger_type>
+<triggered>Triggered</triggered>
+<action>Action</action>
+<event_schedule>Event schedule</event_schedule>
+<event_server>event server</event_server>
+<event_settings>Event settings</event_settings>
+<event_condition>Event trigger</event_condition>
+<event_media>event media</event_media>
+<sun>Sun</sun>
+<mon>Mon</mon>
+<tue>Tue</tue>
+<wed>Wed</wed>
+<thu>Thu</thu>
+<fri>Fri</fri>
+<sat>Sat</sat>
+<time>Time</time>
+<always>Always</always>
+<from>From</from>
+<to>to</to>
+<video_motion_detection>Video motion detection</video_motion_detection>
+<profile>Profile</profile>
+<note_please_configure>Note: Please configure</note_please_configure>
+<motion_detection>Motion detection</motion_detection>
+<first>first</first>
+<periodic>Periodically</periodic>
+<trigger_every>Trigger every other</trigger_every>
+<minutes>minute(s)</minutes>
+<digital_input>Digital input</digital_input>
+<system_boot>System boot</system_boot>
+<recording_notify>Recording notify</recording_notify>
+<audio_detection>Audio detection</audio_detection>
+<rises_above>rises above</rises_above>
+<falls_below>falls below</falls_below>
+<alarm_level>alarm level</alarm_level>
+<camera_tampering_detection>Camera tampering detection</camera_tampering_detection>
+<check_sd_card>Please check SD card if already prepared or suggest formatting again</check_sd_card>
+<tampering>Tampering detection</tampering>
+<too_blurry>Too blurry</too_blurry>
+<too_bright>Too bright</too_bright>
+<too_dark>Too dark</too_dark>
+<active>Active</active>
+<active_to_normal>Active to Normal</active_to_normal>
+<normal_to_active>Normal to Active</normal_to_active>
+<the_name_has_already_existed>This name is already registered. Please try another name or delete the old one.</the_name_has_already_existed>
+<the_name_has_already_existed_please_try_another_name_or_delete_the_old_one>This name is already registered. Please try another name or delete the old one.</the_name_has_already_existed_please_try_another_name_or_delete_the_old_one>
+<the_pw_should_contain_at_least_8_chars>The password should contain at least 8 characters.</the_pw_should_contain_at_least_8_chars>
+<no_more_list_for_audioclip_to_enter>Could not add a new audio clip because the maximum number of audio clips is 20.</no_more_list_for_audioclip_to_enter>
+<no_more_list_for_event_to_enter>Could not add a new event setting because the maximum number of event settings is 3.</no_more_list_for_event_to_enter>
+<no_more_list_for_media_to_enter>Could not add a new media setting because the maximum number of media settings is 5.</no_more_list_for_media_to_enter>
+<no_more_list_for_recording_to_enter>Could not add a new recording setting because the maximum number of recordings is 2.</no_more_list_for_recording_to_enter>
+<no_more_list_for_server_to_enter>Could not add a new server setting because the maximum number of server settings is 5.</no_more_list_for_server_to_enter>
+<no_more_list_to_enter>Could not add a new list because the maximum number of lists is 10</no_more_list_to_enter>
+<note_please_configure>Note: Please configure</note_please_configure>
+<manual_trigger>Manual triggers</manual_trigger>
+<backup_media_while_network_loss>Backup media if the network is disconnected</backup_media_while_network_loss>
+<puremedia>Media</puremedia>
+<pureserver>Server</pureserver>
+<extra_parameter>Extra parameter</extra_parameter>
+<sd>SD</sd>
+<sd_test>SD test</sd_test>
+<view>View</view>
+<create_folders_by_date_time_and_hour_automatically>Create folders by date time and hour automatically</create_folders_by_date_time_and_hour_automatically>
+<add_server>Add server</add_server>
+<add_media>Add media</add_media>
+<save_event>Save event</save_event>
+<save_server>Save server</save_server>
+<save_media>Save media</save_media>
+<event>Event</event>
+<server>Server</server>
+<media>Media</media>
+<passive_mode>Passive mode</passive_mode>
+<server_type>Server type</server_type>
+<this_server_requires_a_secure_connection_ssl>This server requires a secure connection (SSL)</this_server_requires_a_secure_connection_ssl>
+<network_storage>Network storage</network_storage>
+<network_storage_location>Network storage location</network_storage_location>
+<_for_example_my_nas_disk_folder_>(For example: \\my_nas\disk\folder)</_for_example_my_nas_disk_folder_>
+<workgroup>Workgroup</workgroup>
+<media_freespace>Available memory space</media_freespace>
+<media_name>Media name</media_name>
+<media_option>Media Option</media_option>
+<media_options>Media Options</media_options>
+<media_settings>Media settings</media_settings>
+<media_size_is_over_free_space>Exceed maximum memory space.</media_size_is_over_free_space>
+<media_type>Media type</media_type>
+<attached_media>Attached media:</attached_media>
+<video_clip>Video clip</video_clip>
+<system_log>System log</system_log>
+<pre_event_image_s>pre-event image(s)</pre_event_image_s>
+<post_event_image_s>post-event image(s)</post_event_image_s>
+<pre_event_recording>Pre-event recording</pre_event_recording>
+<pre_event_recording_seconds_warnming_message>Pre-event recording seconds can not be larger than maximum duration.</pre_event_recording_seconds_warnming_message>
+<pre_event_seconds_can_not_be_larger_than_max_duration>Pre-event recording seconds can not be larger than maximum duration.</pre_event_seconds_can_not_be_larger_than_max_duration>
+<source>Source</source>
+<maximum_duration>Maximum duration</maximum_duration>
+<maximum_file_size>Maximum file size</maximum_file_size>
+<file_name_prefix>File name prefix</file_name_prefix>
+<add_date_and_time_suffix_to_file_name>Add date and time suffix to file name</add_date_and_time_suffix_to_file_name>
+<toRight>&gt;&gt;</toRight>
+<toLeft>&lt;&lt;</toLeft>
+<available_vadp_triggers>Available VADP triggers pool</available_vadp_triggers>
+<enabled_vadp_tirggers>Enabled Triggers for Event</enabled_vadp_tirggers>
+<person>people</person>
+<event_rules>Analytics Event Rules</event_rules>
+<trigger_source>Source</trigger_source>
+<rule_condition>Trigger</rule_condition>
+<!-- End of Addition -->
+</lang>
+<lang>
+<add>Add</add>
+<cancel>Cancel</cancel>
+<change_direction>Change direction</change_direction>
+<close>Close</close>
+<configurations>Configurations</configurations>
+<counting_report>Counting report</counting_report>
+<csv>csv</csv>
+<date>Date</date>
+<day>Day</day>
+<today>Today</today>
+<delete>Delete</delete>
+<direction>Direction</direction>
+<export_data>Export data</export_data>
+<option_localtime_utc>UTC time</option_localtime_utc>
+<option_localtime_local>Camera local</option_localtime_local>
+<enable_visual_confirmation>Visual confirmation of object</enable_visual_confirmation>
+<enable_periodic_alarm>Enable periodic alarm</enable_periodic_alarm>
+<event_list>Event List</event_list>
+<exceed_field_point_num>Exceed the maximum number of points: 20</exceed_field_point_num>
+<database_preparing_please_try_later>Database is preparing. Please try again later.</database_preparing_please_try_later>
+<format>Format</format>
+<from>From</from>
+<hour>Hour</hour>
+<in>In</in>
+<interval>Interval</interval>
+<invalid_roi>Invalid ROI</invalid_roi>
+<iva_analytics>Analytics</iva_analytics>
+<iva_eventdb>Event</iva_eventdb>
+<iva_report>Report</iva_report>
+<iva_rule_name>Rule name</iva_rule_name>
+<iva_rule_type>Rule type</iva_rule_type>
+<iva_rules>Rules</iva_rules>
+<iva_statistic>Statistic</iva_statistic>
+<iva_statistic_describe_objcount>Statistics</iva_statistic_describe_objcount>
+<iva_system>IVA System</iva_system>
+<json>json</json>
+<maximum_object_size>Maximum object size</maximum_object_size>
+<min15>15 minutes</min15>
+<minimum_object_size>Minimum object size</minimum_object_size>
+<min_obj_size_larger_than_max_obj_size>Minimize object size can't be larger than Maximize object size</min_obj_size_larger_than_max_obj_size>
+<minute>Minute</minute>
+<name>Name</name>
+<out>Out</out>
+<roi>Detection area</roi>
+<remove>Remove</remove>
+<report>Report</report>
+<report_time>Report time</report_time>
+<reset_time_interval>Reset every</reset_time_interval>
+<report_time_interval>Report  interval</report_time_interval>
+<save>Save</save>
+<search>Search</search>
+<search_result>Search result</search_result>
+<seconds>Seconds</seconds>
+<sensitivity>Sensitivity</sensitivity>
+<stop_search>Stop search</stop_search>
+<time>Time</time>
+<to>To</to>
+<toggle>Toggle</toggle>
+<type>Type</type>
+<username>Username</username>
+<setting>Setting</setting>
+<password>Password</password>
+<last_time>Last time</last_time>
+<line_ref>Reference line</line_ref>
+<ss_map_label>Start-Stop map</ss_map_label>
+<ss_map_unit>pairs</ss_map_unit>
+<empty_data>Empty data, no people have been detected yet.</empty_data>
+<internal_error>Get Start-Stop Map pairs failed due to internal error.</internal_error>	
+<loiter_alarm_interval>Alarm interval</loiter_alarm_interval>
+<loitering_duration>Loitering duration</loitering_duration>
+<whole_area>Whole area</whole_area>
+<xml>xml</xml>
+<!-- Penlin addition when 2015/10/12 for event_push page -->
+	<!-- event_push.html required -->
+<Servers>Servers</Servers>
+<status>status</status>
+<server_name>Name</server_name>
+<server_protocol>Protocol</server_protocol>
+<address_location>Address</address_location>
+<report_aggregation>Aggregation Level</report_aggregation>
+<report_schedule>Delivery Schedule</report_schedule>
+<report_schedule_note>schedule time must be loner than or equal with aggregation level</report_schedule_note>
+<report_format>Foramt</report_format>
+<report_lite>Lite</report_lite>
+<report_lite_note>lite mode would ignore date with all zero in/out.</report_lite_note>
+<report_localtime>localtime</report_localtime>
+<report_localtime_note>Represent StartTime, EndTime in camera local time zone with ISO8601 format. Or defaultly in UTC time. </report_localtime_note>
+<ServerConfigurations>Configurations</ServerConfigurations>
+<server_address>Server address</server_address>
+<user_name>Username</user_name>
+<!--password></password-->
+<server_port>Port</server_port>
+<email>Email</email>
+<sender_email_address>Sender email</sender_email_address>
+<recipient_email_address>Recipient email</recipient_email_address>
+<ftp>FTP</ftp>
+<remote_folder_name>FTP folder name</remote_folder_name>
+<reportname_format>Filename format</reportname_format>
+<filename_format_note>support customize report filename format: [default: report_%T.%F] &lt;br&gt;%T: report timestamp;  %M: Mac address;  %D: DeviceID;  %G: GroupID&lt;br&gt;%S: Schedule time in second;  %A: Aggregation level in second&lt;br&gt;%N: Server name;  %F: report format;  %L: LITE or empty</filename_format_note>
+<http>HTTP</http>
+<url>Server address</url>
+<server_uri>Server uri</server_uri>
+
+<test>Test</test>
+<!--close></close-->
+<!--save></save-->
+	<!-- livereport.html required -->
+<enabled_di_task_to_switch_counting_feature>Enable Digital Input (DI) to switch Counting On/Off</enabled_di_task_to_switch_counting_feature>
+<minimum_signal_interval>Mininum DI signal detection interval : </minimum_signal_interval>
+<starttime>StartTime</starttime>
+<endtime>EndTime  </endtime>
+<now>Now</now>
+<counting_data_pull>Pull Event</counting_data_pull>
+<send>Send</send>
+<get_cgi>CGI</get_cgi>
+<localtime>local time</localtime>
+<invalid_starttime_format>You have used an invalid format for StartTime!</invalid_starttime_format>
+<invalid_endtime_format>You have used an invalid format for EndTime</invalid_endtime_format>
+	<!-- common.js required -->
+<you_have_used_invalid_characters_lg>You have used invalid characters. These invalid characters are: \, /, :, *, ., ?, &quot;, ', &lt;, &gt;, &amp;, |</you_have_used_invalid_characters_lg>
+<you_have_used_invalid_characters_sh>You have used invalid characters. These invalid characters are: &quot;, ', &lt;, &gt;, &amp;</you_have_used_invalid_characters_sh>
+<you_have_used_invalid_characters_host>You have used invalid characters. These invalid characters are: &quot;, ', &lt;, &gt;, =, &amp;</you_have_used_invalid_characters_host>
+<field_cannot_be_empty>This field cannot be empty</field_cannot_be_empty>
+<space_is_invalid>Do not type a space key in the field.</space_is_invalid>
+<accessname_can_only_contains_numeric_alpha>Only numeric and alphabetical characters are allowed for access name.</accessname_can_only_contains_numeric_alpha>
+<please_input_a_valid_email_address>Please input a valid email address.</please_input_a_valid_email_address>
+<please_input_a_valid_value>Please input a valid value.</please_input_a_valid_value>
+<please_input_a_value_between_0_and_255>Please input a value between 0 and 255</please_input_a_value_between_0_and_255>
+<please_enter_a_valid_ip_address>Please enter a valid IP address.</please_enter_a_valid_ip_address>
+
+	<!-- event_push.js required -->
+<you_have_used_invalid_characters_servername>You have used invalid characters. These invalid characters are: \, /, :, *, ?, &quot;, ', &lt;, &gt;, &amp;, |, %</you_have_used_invalid_characters_servername>
+<you_have_used_invalid_characters_folder>You have used invalid characters. These invalid characters are:  /, :, *,?, &quot;, ', &lt;, &gt;, &amp;, |</you_have_used_invalid_characters_folder>
+<you_have_used_invalid_characters_foldername>You have used invalid characters. These invalid characters are: :, *, ?, &quot;, ', &lt;, &gt;, &amp;, |,  (space)</you_have_used_invalid_characters_foldername>
+<you_have_used_invalid_characters_fileformat>You have used invalid characters. These invalid characters are: \, /, :, *, ?, &quot;, ', &lt;, &gt;, &amp;, |</you_have_used_invalid_characters_fileformat>
+<your_have_used_name_with_too_long_or_short_length>You have input a name in too long or too short length!</your_have_used_name_with_too_long_or_short_length>
+<you_have_used_fileformat_without_time_variable_T>Warning! You have used a filename without time variable %T. This might cause your reports be overridden!</you_have_used_fileformat_without_time_variable_T>
+<invalid_protocol>Please Choose a valid Protocol!</invalid_protocol>
+<invalid_schedule_time>schedule time must be larger than aggregation level!</invalid_schedule_time>
+<!-- End of Addition -->
+<!-- Penlin addition when 2015/11/03 for event_setting page -->
+<event_name>Event name</event_name>
+<enable_this_event>Enable this event</enable_this_event>
+<enable_this_recording>Enable this recording</enable_this_recording>
+<enable_this_trigger>Enable this trigger</enable_this_trigger>
+<priority>Priority</priority>
+<high>High</high>
+<normal>Normal</normal>
+<low>Low</low>
+<delay_for>Detect next event trigger after</delay_for>
+<seconds>seconds</seconds>
+<seconds_before_detecting_next_event>second(s).</seconds_before_detecting_next_event>
+<seconds_before_recording> seconds before recording</seconds_before_recording>
+<schedule>Schedule</schedule>
+<trigger>Trigger</trigger>
+<trigger_D_O_1_for>Trigger digital output 1 for</trigger_D_O_1_for>
+<trigger_D_O_2_for>Trigger digital output 2 for</trigger_D_O_2_for>
+<trigger_D_O_for>Trigger digital output for</trigger_D_O_for>
+<trigger_duration>Trigger duration</trigger_duration>
+<trigger_event_when_detected_audio>Trigger event when detected audio</trigger_event_when_detected_audio>
+<trigger_every>Trigger every other</trigger_every>
+<trigger_name>Trigger name</trigger_name>
+<trigger_settings>Trigger Settings</trigger_settings>
+<trigger_time>Trigger time</trigger_time>
+<trigger_type>Trigger type</trigger_type>
+<triggered>Triggered</triggered>
+<action>Action</action>
+<event_schedule>Event schedule</event_schedule>
+<event_server>event server</event_server>
+<event_settings>Event settings</event_settings>
+<event_condition>Event trigger</event_condition>
+<event_media>event media</event_media>
+<sun>Sun</sun>
+<mon>Mon</mon>
+<tue>Tue</tue>
+<wed>Wed</wed>
+<thu>Thu</thu>
+<fri>Fri</fri>
+<sat>Sat</sat>
+<time>Time</time>
+<always>Always</always>
+<from>From</from>
+<to>to</to>
+<video_motion_detection>Video motion detection</video_motion_detection>
+<profile>Profile</profile>
+<note_please_configure>Note: Please configure</note_please_configure>
+<motion_detection>Motion detection</motion_detection>
+<first>first</first>
+<periodic>Periodically</periodic>
+<trigger_every>Trigger every other</trigger_every>
+<minutes>minute(s)</minutes>
+<digital_input>Digital input</digital_input>
+<system_boot>System boot</system_boot>
+<recording_notify>Recording notify</recording_notify>
+<audio_detection>Audio detection</audio_detection>
+<rises_above>rises above</rises_above>
+<falls_below>falls below</falls_below>
+<alarm_level>alarm level</alarm_level>
+<camera_tampering_detection>Camera tampering detection</camera_tampering_detection>
+<check_sd_card>Please check SD card if already prepared or suggest formatting again</check_sd_card>
+<tampering>Tampering detection</tampering>
+<too_blurry>Too blurry</too_blurry>
+<too_bright>Too bright</too_bright>
+<too_dark>Too dark</too_dark>
+<active>Active</active>
+<active_to_normal>Active to Normal</active_to_normal>
+<normal_to_active>Normal to Active</normal_to_active>
+<the_name_has_already_existed>This name is already registered. Please try another name or delete the old one.</the_name_has_already_existed>
+<the_name_has_already_existed_please_try_another_name_or_delete_the_old_one>This name is already registered. Please try another name or delete the old one.</the_name_has_already_existed_please_try_another_name_or_delete_the_old_one>
+<the_pw_should_contain_at_least_8_chars>The password should contain at least 8 characters.</the_pw_should_contain_at_least_8_chars>
+<no_more_list_for_audioclip_to_enter>Could not add a new audio clip because the maximum number of audio clips is 20.</no_more_list_for_audioclip_to_enter>
+<no_more_list_for_event_to_enter>Could not add a new event setting because the maximum number of event settings is 3.</no_more_list_for_event_to_enter>
+<no_more_list_for_media_to_enter>Could not add a new media setting because the maximum number of media settings is 5.</no_more_list_for_media_to_enter>
+<no_more_list_for_recording_to_enter>Could not add a new recording setting because the maximum number of recordings is 2.</no_more_list_for_recording_to_enter>
+<no_more_list_for_server_to_enter>Could not add a new server setting because the maximum number of server settings is 5.</no_more_list_for_server_to_enter>
+<no_more_list_to_enter>Could not add a new list because the maximum number of lists is 10</no_more_list_to_enter>
+<note_please_configure>Note: Please configure</note_please_configure>
+<manual_trigger>Manual triggers</manual_trigger>
+<backup_media_while_network_loss>Backup media if the network is disconnected</backup_media_while_network_loss>
+<puremedia>Media</puremedia>
+<pureserver>Server</pureserver>
+<extra_parameter>Extra parameter</extra_parameter>
+<sd>SD</sd>
+<sd_test>SD test</sd_test>
+<view>View</view>
+<create_folders_by_date_time_and_hour_automatically>Create folders by date time and hour automatically</create_folders_by_date_time_and_hour_automatically>
+<add_server>Add server</add_server>
+<add_media>Add media</add_media>
+<save_event>Save event</save_event>
+<save_server>Save server</save_server>
+<save_media>Save media</save_media>
+<event>Event</event>
+<server>Server</server>
+<media>Media</media>
+<passive_mode>Passive mode</passive_mode>
+<server_type>Server type</server_type>
+<this_server_requires_a_secure_connection_ssl>This server requires a secure connection (SSL)</this_server_requires_a_secure_connection_ssl>
+<network_storage>Network storage</network_storage>
+<network_storage_location>Network storage location</network_storage_location>
+<_for_example_my_nas_disk_folder_>(For example: \\my_nas\disk\folder)</_for_example_my_nas_disk_folder_>
+<workgroup>Workgroup</workgroup>
+<media_freespace>Available memory space</media_freespace>
+<media_name>Media name</media_name>
+<media_option>Media Option</media_option>
+<media_options>Media Options</media_options>
+<media_settings>Media settings</media_settings>
+<media_size_is_over_free_space>Exceed maximum memory space.</media_size_is_over_free_space>
+<media_type>Media type</media_type>
+<attached_media>Attached media:</attached_media>
+<video_clip>Video clip</video_clip>
+<system_log>System log</system_log>
+<pre_event_image_s>pre-event image(s)</pre_event_image_s>
+<post_event_image_s>post-event image(s)</post_event_image_s>
+<pre_event_recording>Pre-event recording</pre_event_recording>
+<pre_event_recording_seconds_warnming_message>Pre-event recording seconds can not be larger than maximum duration.</pre_event_recording_seconds_warnming_message>
+<pre_event_seconds_can_not_be_larger_than_max_duration>Pre-event recording seconds can not be larger than maximum duration.</pre_event_seconds_can_not_be_larger_than_max_duration>
+<source>Source</source>
+<maximum_duration>Maximum duration</maximum_duration>
+<maximum_file_size>Maximum file size</maximum_file_size>
+<file_name_prefix>File name prefix</file_name_prefix>
+<add_date_and_time_suffix_to_file_name>Add date and time suffix to file name</add_date_and_time_suffix_to_file_name>
+<toRight>&gt;&gt;</toRight>
+<toLeft>&lt;&lt;</toLeft>
+<available_vadp_triggers>Available VADP triggers pool</available_vadp_triggers>
+<enabled_vadp_tirggers>Enabled Triggers for Event</enabled_vadp_tirggers>
+<person>people</person>
+<event_rules>Analytics Event Rules</event_rules>
+<trigger_source>Source</trigger_source>
+<rule_condition>Trigger</rule_condition>
+<!-- End of Addition -->
+</lang>
+<lang>
+<add>Add</add>
+<cancel>Cancel</cancel>
+<change_direction>Change direction</change_direction>
+<close>Close</close>
+<configurations>Configurations</configurations>
+<counting_report>Counting report</counting_report>
+<csv>csv</csv>
+<date>Date</date>
+<day>Day</day>
+<today>Today</today>
+<delete>Delete</delete>
+<direction>Direction</direction>
+<export_data>Export data</export_data>
+<option_localtime_utc>UTC time</option_localtime_utc>
+<option_localtime_local>Camera local</option_localtime_local>
+<enable_visual_confirmation>Visual confirmation of object</enable_visual_confirmation>
+<enable_periodic_alarm>Enable periodic alarm</enable_periodic_alarm>
+<event_list>Event List</event_list>
+<exceed_field_point_num>Exceed the maximum number of points: 20</exceed_field_point_num>
+<database_preparing_please_try_later>Database is preparing. Please try again later.</database_preparing_please_try_later>
+<format>Format</format>
+<from>From</from>
+<hour>Hour</hour>
+<in>In</in>
+<interval>Interval</interval>
+<invalid_roi>Invalid ROI</invalid_roi>
+<iva_analytics>Analytics</iva_analytics>
+<iva_eventdb>Event</iva_eventdb>
+<iva_report>Report</iva_report>
+<iva_rule_name>Rule name</iva_rule_name>
+<iva_rule_type>Rule type</iva_rule_type>
+<iva_rules>Rules</iva_rules>
+<iva_statistic>Statistic</iva_statistic>
+<iva_statistic_describe_objcount>Statistics</iva_statistic_describe_objcount>
+<iva_system>IVA System</iva_system>
+<json>json</json>
+<maximum_object_size>Maximum object size</maximum_object_size>
+<min15>15 minutes</min15>
+<minimum_object_size>Minimum object size</minimum_object_size>
+<min_obj_size_larger_than_max_obj_size>Minimize object size can't be larger than Maximize object size</min_obj_size_larger_than_max_obj_size>
+<minute>Minute</minute>
+<name>Name</name>
+<out>Out</out>
+<roi>Detection area</roi>
+<remove>Remove</remove>
+<report>Report</report>
+<report_time>Report time</report_time>
+<reset_time_interval>Reset every</reset_time_interval>
+<report_time_interval>Report  interval</report_time_interval>
+<save>Save</save>
+<search>Search</search>
+<search_result>Search result</search_result>
+<seconds>Seconds</seconds>
+<sensitivity>Sensitivity</sensitivity>
+<stop_search>Stop search</stop_search>
+<time>Time</time>
+<to>To</to>
+<toggle>Toggle</toggle>
+<type>Type</type>
+<username>Username</username>
+<setting>Setting</setting>
+<password>Password</password>
+<last_time>Last time</last_time>
+<line_ref>Reference line</line_ref>
+<ss_map_label>Start-Stop map</ss_map_label>
+<ss_map_unit>pairs</ss_map_unit>
+<empty_data>Empty data, no people have been detected yet.</empty_data>
+<internal_error>Get Start-Stop Map pairs failed due to internal error.</internal_error>	
+<loiter_alarm_interval>Alarm interval</loiter_alarm_interval>
+<loitering_duration>Loitering duration</loitering_duration>
+<xml>xml</xml>
+<!-- Penlin addition when 2015/10/12 for event_push page -->
+	<!-- event_push.html required -->
+<Servers>Servers</Servers>
+<status>status</status>
+<server_name>Name</server_name>
+<server_protocol>Protocol</server_protocol>
+<address_location>Address</address_location>
+<report_aggregation>Aggregation Level</report_aggregation>
+<report_schedule>Delivery Schedule</report_schedule>
+<report_schedule_note>schedule time must be loner than or equal with aggregation level</report_schedule_note>
+<report_format>Foramt</report_format>
+<report_lite>Lite</report_lite>
+<report_lite_note>lite mode would ignore date with all zero in/out.</report_lite_note>
+<report_localtime>localtime</report_localtime>
+<report_localtime_note>Represent StartTime, EndTime in camera local time zone with ISO8601 format. Or defaultly in UTC time. </report_localtime_note>
+<ServerConfigurations>Configurations</ServerConfigurations>
+<server_address>Server address</server_address>
+<user_name>Username</user_name>
+<!--password></password-->
+<server_port>Port</server_port>
+<email>Email</email>
+<sender_email_address>Sender email</sender_email_address>
+<recipient_email_address>Recipient email</recipient_email_address>
+<ftp>FTP</ftp>
+<remote_folder_name>FTP folder name</remote_folder_name>
+<reportname_format>Filename format</reportname_format>
+<filename_format_note>support customize report filename format: [default: report_%T.%F] &lt;br&gt;%T: report timestamp;  %M: Mac address;  %D: DeviceID;  %G: GroupID&lt;br&gt;%S: Schedule time in second;  %A: Aggregation level in second&lt;br&gt;%N: Server name;  %F: report format;  %L: LITE or empty</filename_format_note>
+<http>HTTP</http>
+<url>Server address</url>
+<server_uri>Server uri</server_uri>
+
+<test>Test</test>
+<!--close></close-->
+<!--save></save-->
+	<!-- livereport.html required -->
+<enabled_di_task_to_switch_counting_feature>Enable Digital Input (DI) to switch Counting On/Off</enabled_di_task_to_switch_counting_feature>
+<minimum_signal_interval>Mininum DI signal detection interval : </minimum_signal_interval>
+<starttime>StartTime</starttime>
+<endtime>EndTime  </endtime>
+<now>Now</now>
+<counting_data_pull>Pull Event</counting_data_pull>
+<send>Send</send>
+<get_cgi>CGI</get_cgi>
+<localtime>local time</localtime>
+<invalid_starttime_format>You have used an invalid format for StartTime!</invalid_starttime_format>
+<invalid_endtime_format>You have used an invalid format for EndTime</invalid_endtime_format>
+	<!-- common.js required -->
+<you_have_used_invalid_characters_lg>You have used invalid characters. These invalid characters are: \, /, :, *, ., ?, &quot;, ', &lt;, &gt;, &amp;, |</you_have_used_invalid_characters_lg>
+<you_have_used_invalid_characters_sh>You have used invalid characters. These invalid characters are: &quot;, ', &lt;, &gt;, &amp;</you_have_used_invalid_characters_sh>
+<you_have_used_invalid_characters_host>You have used invalid characters. These invalid characters are: &quot;, ', &lt;, &gt;, =, &amp;</you_have_used_invalid_characters_host>
+<field_cannot_be_empty>This field cannot be empty</field_cannot_be_empty>
+<space_is_invalid>Do not type a space key in the field.</space_is_invalid>
+<accessname_can_only_contains_numeric_alpha>Only numeric and alphabetical characters are allowed for access name.</accessname_can_only_contains_numeric_alpha>
+<please_input_a_valid_email_address>Please input a valid email address.</please_input_a_valid_email_address>
+<please_input_a_valid_value>Please input a valid value.</please_input_a_valid_value>
+<please_input_a_value_between_0_and_255>Please input a value between 0 and 255</please_input_a_value_between_0_and_255>
+<please_enter_a_valid_ip_address>Please enter a valid IP address.</please_enter_a_valid_ip_address>
+
+	<!-- event_push.js required -->
+<you_have_used_invalid_characters_servername>You have used invalid characters. These invalid characters are: \, /, :, *, ?, &quot;, ', &lt;, &gt;, &amp;, |, %</you_have_used_invalid_characters_servername>
+<you_have_used_invalid_characters_folder>You have used invalid characters. These invalid characters are:  /, :, *,?, &quot;, ', &lt;, &gt;, &amp;, |</you_have_used_invalid_characters_folder>
+<you_have_used_invalid_characters_foldername>You have used invalid characters. These invalid characters are: :, *, ?, &quot;, ', &lt;, &gt;, &amp;, |,  (space)</you_have_used_invalid_characters_foldername>
+<you_have_used_invalid_characters_fileformat>You have used invalid characters. These invalid characters are: \, /, :, *, ?, &quot;, ', &lt;, &gt;, &amp;, |</you_have_used_invalid_characters_fileformat>
+<your_have_used_name_with_too_long_or_short_length>You have input a name in too long or too short length!</your_have_used_name_with_too_long_or_short_length>
+<you_have_used_fileformat_without_time_variable_T>Warning! You have used a filename without time variable %T. This might cause your reports be overridden!</you_have_used_fileformat_without_time_variable_T>
+<invalid_protocol>Please Choose a valid Protocol!</invalid_protocol>
+<invalid_schedule_time>schedule time must be larger than aggregation level!</invalid_schedule_time>
+<!-- End of Addition -->
+<!-- Penlin addition when 2015/11/03 for event_setting page -->
+<event_name>Event name</event_name>
+<enable_this_event>Enable this event</enable_this_event>
+<enable_this_recording>Enable this recording</enable_this_recording>
+<enable_this_trigger>Enable this trigger</enable_this_trigger>
+<priority>Priority</priority>
+<high>High</high>
+<normal>Normal</normal>
+<low>Low</low>
+<delay_for>Detect next event trigger after</delay_for>
+<seconds>seconds</seconds>
+<seconds_before_detecting_next_event>second(s).</seconds_before_detecting_next_event>
+<seconds_before_recording> seconds before recording</seconds_before_recording>
+<schedule>Schedule</schedule>
+<trigger>Trigger</trigger>
+<trigger_D_O_1_for>Trigger digital output 1 for</trigger_D_O_1_for>
+<trigger_D_O_2_for>Trigger digital output 2 for</trigger_D_O_2_for>
+<trigger_D_O_for>Trigger digital output for</trigger_D_O_for>
+<trigger_duration>Trigger duration</trigger_duration>
+<trigger_event_when_detected_audio>Trigger event when detected audio</trigger_event_when_detected_audio>
+<trigger_every>Trigger every other</trigger_every>
+<trigger_name>Trigger name</trigger_name>
+<trigger_settings>Trigger Settings</trigger_settings>
+<trigger_time>Trigger time</trigger_time>
+<trigger_type>Trigger type</trigger_type>
+<triggered>Triggered</triggered>
+<action>Action</action>
+<event_schedule>Event schedule</event_schedule>
+<event_server>event server</event_server>
+<event_settings>Event settings</event_settings>
+<event_condition>Event trigger</event_condition>
+<event_media>event media</event_media>
+<sun>Sun</sun>
+<mon>Mon</mon>
+<tue>Tue</tue>
+<wed>Wed</wed>
+<thu>Thu</thu>
+<fri>Fri</fri>
+<sat>Sat</sat>
+<time>Time</time>
+<always>Always</always>
+<from>From</from>
+<to>to</to>
+<video_motion_detection>Video motion detection</video_motion_detection>
+<profile>Profile</profile>
+<note_please_configure>Note: Please configure</note_please_configure>
+<motion_detection>Motion detection</motion_detection>
+<first>first</first>
+<periodic>Periodically</periodic>
+<trigger_every>Trigger every other</trigger_every>
+<minutes>minute(s)</minutes>
+<digital_input>Digital input</digital_input>
+<system_boot>System boot</system_boot>
+<recording_notify>Recording notify</recording_notify>
+<audio_detection>Audio detection</audio_detection>
+<rises_above>rises above</rises_above>
+<falls_below>falls below</falls_below>
+<alarm_level>alarm level</alarm_level>
+<camera_tampering_detection>Camera tampering detection</camera_tampering_detection>
+<check_sd_card>Please check SD card if already prepared or suggest formatting again</check_sd_card>
+<tampering>Tampering detection</tampering>
+<too_blurry>Too blurry</too_blurry>
+<too_bright>Too bright</too_bright>
+<too_dark>Too dark</too_dark>
+<active>Active</active>
+<active_to_normal>Active to Normal</active_to_normal>
+<normal_to_active>Normal to Active</normal_to_active>
+<the_name_has_already_existed>This name is already registered. Please try another name or delete the old one.</the_name_has_already_existed>
+<the_name_has_already_existed_please_try_another_name_or_delete_the_old_one>This name is already registered. Please try another name or delete the old one.</the_name_has_already_existed_please_try_another_name_or_delete_the_old_one>
+<the_pw_should_contain_at_least_8_chars>The password should contain at least 8 characters.</the_pw_should_contain_at_least_8_chars>
+<no_more_list_for_audioclip_to_enter>Could not add a new audio clip because the maximum number of audio clips is 20.</no_more_list_for_audioclip_to_enter>
+<no_more_list_for_event_to_enter>Could not add a new event setting because the maximum number of event settings is 3.</no_more_list_for_event_to_enter>
+<no_more_list_for_media_to_enter>Could not add a new media setting because the maximum number of media settings is 5.</no_more_list_for_media_to_enter>
+<no_more_list_for_recording_to_enter>Could not add a new recording setting because the maximum number of recordings is 2.</no_more_list_for_recording_to_enter>
+<no_more_list_for_server_to_enter>Could not add a new server setting because the maximum number of server settings is 5.</no_more_list_for_server_to_enter>
+<no_more_list_to_enter>Could not add a new list because the maximum number of lists is 10</no_more_list_to_enter>
+<note_please_configure>Note: Please configure</note_please_configure>
+<manual_trigger>Manual triggers</manual_trigger>
+<backup_media_while_network_loss>Backup media if the network is disconnected</backup_media_while_network_loss>
+<puremedia>Media</puremedia>
+<pureserver>Server</pureserver>
+<extra_parameter>Extra parameter</extra_parameter>
+<sd>SD</sd>
+<sd_test>SD test</sd_test>
+<view>View</view>
+<create_folders_by_date_time_and_hour_automatically>Create folders by date time and hour automatically</create_folders_by_date_time_and_hour_automatically>
+<add_server>Add server</add_server>
+<add_media>Add media</add_media>
+<save_event>Save event</save_event>
+<save_server>Save server</save_server>
+<save_media>Save media</save_media>
+<event>Event</event>
+<server>Server</server>
+<media>Media</media>
+<passive_mode>Passive mode</passive_mode>
+<server_type>Server type</server_type>
+<this_server_requires_a_secure_connection_ssl>This server requires a secure connection (SSL)</this_server_requires_a_secure_connection_ssl>
+<network_storage>Network storage</network_storage>
+<network_storage_location>Network storage location</network_storage_location>
+<_for_example_my_nas_disk_folder_>(For example: \\my_nas\disk\folder)</_for_example_my_nas_disk_folder_>
+<workgroup>Workgroup</workgroup>
+<media_freespace>Available memory space</media_freespace>
+<media_name>Media name</media_name>
+<media_option>Media Option</media_option>
+<media_options>Media Options</media_options>
+<media_settings>Media settings</media_settings>
+<media_size_is_over_free_space>Exceed maximum memory space.</media_size_is_over_free_space>
+<media_type>Media type</media_type>
+<attached_media>Attached media:</attached_media>
+<video_clip>Video clip</video_clip>
+<system_log>System log</system_log>
+<pre_event_image_s>pre-event image(s)</pre_event_image_s>
+<post_event_image_s>post-event image(s)</post_event_image_s>
+<pre_event_recording>Pre-event recording</pre_event_recording>
+<pre_event_recording_seconds_warnming_message>Pre-event recording seconds can not be larger than maximum duration.</pre_event_recording_seconds_warnming_message>
+<pre_event_seconds_can_not_be_larger_than_max_duration>Pre-event recording seconds can not be larger than maximum duration.</pre_event_seconds_can_not_be_larger_than_max_duration>
+<source>Source</source>
+<maximum_duration>Maximum duration</maximum_duration>
+<maximum_file_size>Maximum file size</maximum_file_size>
+<file_name_prefix>File name prefix</file_name_prefix>
+<add_date_and_time_suffix_to_file_name>Add date and time suffix to file name</add_date_and_time_suffix_to_file_name>
+<toRight>&gt;&gt;</toRight>
+<toLeft>&lt;&lt;</toLeft>
+<available_vadp_triggers>Available VADP triggers pool</available_vadp_triggers>
+<enabled_vadp_tirggers>Enabled Triggers for Event</enabled_vadp_tirggers>
+<person>people</person>
+<event_rules>Analytics Event Rules</event_rules>
+<trigger_source>Source</trigger_source>
+<rule_condition>Trigger</rule_condition>
+<!-- End of Addition -->
+</lang>
+<lang>
+<add>Add</add>
+<cancel>Cancel</cancel>
+<change_direction>Change direction</change_direction>
+<close>Close</close>
+<configurations>Configurations</configurations>
+<counting_report>Counting report</counting_report>
+<csv>csv</csv>
+<date>Date</date>
+<day>Day</day>
+<today>Today</today>
+<delete>Delete</delete>
+<direction>Direction</direction>
+<export_data>Export data</export_data>
+<option_localtime_utc>UTC time</option_localtime_utc>
+<option_localtime_local>Camera local</option_localtime_local>
+<enable_visual_confirmation>Visual confirmation of object</enable_visual_confirmation>
+<enable_periodic_alarm>Enable periodic alarm</enable_periodic_alarm>
+<event_list>Event List</event_list>
+<exceed_field_point_num>Exceed the maximum number of points: 20</exceed_field_point_num>
+<database_preparing_please_try_later>Database is preparing. Please try again later.</database_preparing_please_try_later>
+<format>Format</format>
+<from>From</from>
+<hour>Hour</hour>
+<in>In</in>
+<interval>Interval</interval>
+<invalid_roi>Invalid ROI</invalid_roi>
+<iva_analytics>Analytics</iva_analytics>
+<iva_eventdb>Event</iva_eventdb>
+<iva_report>Report</iva_report>
+<iva_rule_name>Rule name</iva_rule_name>
+<iva_rule_type>Rule type</iva_rule_type>
+<iva_rules>Rules</iva_rules>
+<iva_statistic>Statistic</iva_statistic>
+<iva_statistic_describe_objcount>Statistics</iva_statistic_describe_objcount>
+<iva_system>IVA System</iva_system>
+<json>json</json>
+<maximum_object_size>Maximum object size</maximum_object_size>
+<min15>15 minutes</min15>
+<minimum_object_size>Minimum object size</minimum_object_size>
+<min_obj_size_larger_than_max_obj_size>Minimize object size can't be larger than Maximize object size</min_obj_size_larger_than_max_obj_size>
+<minute>Minute</minute>
+<name>Name</name>
+<out>Out</out>
+<roi>Detection area</roi>
+<remove>Remove</remove>
+<report>Report</report>
+<report_time>Report time</report_time>
+<reset_time_interval>Reset every</reset_time_interval>
+<report_time_interval>Report  interval</report_time_interval>
+<save>Save</save>
+<search>Search</search>
+<search_result>Search result</search_result>
+<seconds>Seconds</seconds>
+<sensitivity>Sensitivity</sensitivity>
+<stop_search>Stop search</stop_search>
+<time>Time</time>
+<to>To</to>
+<toggle>Toggle</toggle>
+<type>Type</type>
+<username>Username</username>
+<setting>Setting</setting>
+<password>Password</password>
+<last_time>Last time</last_time>
+<line_ref>Reference line</line_ref>
+<ss_map_label>Start-Stop map</ss_map_label>
+<ss_map_unit>pairs</ss_map_unit>
+<empty_data>Empty data, no people have been detected yet.</empty_data>
+<internal_error>Get Start-Stop Map pairs failed due to internal error.</internal_error>	
+<loiter_alarm_interval>Alarm interval</loiter_alarm_interval>
+<loitering_duration>Loitering duration</loitering_duration>
+<xml>xml</xml>
+<!-- Penlin addition when 2015/10/12 for event_push page -->
+	<!-- event_push.html required -->
+<Servers>Servers</Servers>
+<status>status</status>
+<server_name>Name</server_name>
+<server_protocol>Protocol</server_protocol>
+<address_location>Address</address_location>
+<report_aggregation>Aggregation Level</report_aggregation>
+<report_schedule>Delivery Schedule</report_schedule>
+<report_schedule_note>schedule time must be loner than or equal with aggregation level</report_schedule_note>
+<report_format>Foramt</report_format>
+<report_lite>Lite</report_lite>
+<report_lite_note>lite mode would ignore date with all zero in/out.</report_lite_note>
+<report_localtime>localtime</report_localtime>
+<report_localtime_note>Represent StartTime, EndTime in camera local time zone with ISO8601 format. Or defaultly in UTC time. </report_localtime_note>
+<ServerConfigurations>Configurations</ServerConfigurations>
+<server_address>Server address</server_address>
+<user_name>Username</user_name>
+<!--password></password-->
+<server_port>Port</server_port>
+<email>Email</email>
+<sender_email_address>Sender email</sender_email_address>
+<recipient_email_address>Recipient email</recipient_email_address>
+<ftp>FTP</ftp>
+<remote_folder_name>FTP folder name</remote_folder_name>
+<reportname_format>Filename format</reportname_format>
+<filename_format_note>support customize report filename format: [default: report_%T.%F] &lt;br&gt;%T: report timestamp;  %M: Mac address;  %D: DeviceID;  %G: GroupID&lt;br&gt;%S: Schedule time in second;  %A: Aggregation level in second&lt;br&gt;%N: Server name;  %F: report format;  %L: LITE or empty</filename_format_note>
+<http>HTTP</http>
+<url>Server address</url>
+<server_uri>Server uri</server_uri>
+
+<test>Test</test>
+<!--close></close-->
+<!--save></save-->
+	<!-- livereport.html required -->
+<enabled_di_task_to_switch_counting_feature>Enable Digital Input (DI) to switch Counting On/Off</enabled_di_task_to_switch_counting_feature>
+<minimum_signal_interval>Mininum DI signal detection interval : </minimum_signal_interval>
+<starttime>StartTime</starttime>
+<endtime>EndTime  </endtime>
+<now>Now</now>
+<counting_data_pull>Pull Event</counting_data_pull>
+<send>Send</send>
+<get_cgi>CGI</get_cgi>
+<localtime>local time</localtime>
+<invalid_starttime_format>You have used an invalid format for StartTime!</invalid_starttime_format>
+<invalid_endtime_format>You have used an invalid format for EndTime</invalid_endtime_format>
+	<!-- common.js required -->
+<you_have_used_invalid_characters_lg>You have used invalid characters. These invalid characters are: \, /, :, *, ., ?, &quot;, ', &lt;, &gt;, &amp;, |</you_have_used_invalid_characters_lg>
+<you_have_used_invalid_characters_sh>You have used invalid characters. These invalid characters are: &quot;, ', &lt;, &gt;, &amp;</you_have_used_invalid_characters_sh>
+<you_have_used_invalid_characters_host>You have used invalid characters. These invalid characters are: &quot;, ', &lt;, &gt;, =, &amp;</you_have_used_invalid_characters_host>
+<field_cannot_be_empty>This field cannot be empty</field_cannot_be_empty>
+<space_is_invalid>Do not type a space key in the field.</space_is_invalid>
+<accessname_can_only_contains_numeric_alpha>Only numeric and alphabetical characters are allowed for access name.</accessname_can_only_contains_numeric_alpha>
+<please_input_a_valid_email_address>Please input a valid email address.</please_input_a_valid_email_address>
+<please_input_a_valid_value>Please input a valid value.</please_input_a_valid_value>
+<please_input_a_value_between_0_and_255>Please input a value between 0 and 255</please_input_a_value_between_0_and_255>
+<please_enter_a_valid_ip_address>Please enter a valid IP address.</please_enter_a_valid_ip_address>
+
+	<!-- event_push.js required -->
+<you_have_used_invalid_characters_servername>You have used invalid characters. These invalid characters are: \, /, :, *, ?, &quot;, ', &lt;, &gt;, &amp;, |, %</you_have_used_invalid_characters_servername>
+<you_have_used_invalid_characters_folder>You have used invalid characters. These invalid characters are:  /, :, *,?, &quot;, ', &lt;, &gt;, &amp;, |</you_have_used_invalid_characters_folder>
+<you_have_used_invalid_characters_foldername>You have used invalid characters. These invalid characters are: :, *, ?, &quot;, ', &lt;, &gt;, &amp;, |,  (space)</you_have_used_invalid_characters_foldername>
+<you_have_used_invalid_characters_fileformat>You have used invalid characters. These invalid characters are: \, /, :, *, ?, &quot;, ', &lt;, &gt;, &amp;, |</you_have_used_invalid_characters_fileformat>
+<your_have_used_name_with_too_long_or_short_length>You have input a name in too long or too short length!</your_have_used_name_with_too_long_or_short_length>
+<you_have_used_fileformat_without_time_variable_T>Warning! You have used a filename without time variable %T. This might cause your reports be overridden!</you_have_used_fileformat_without_time_variable_T>
+<invalid_protocol>Please Choose a valid Protocol!</invalid_protocol>
+<invalid_schedule_time>schedule time must be larger than aggregation level!</invalid_schedule_time>
+<!-- End of Addition -->
+<!-- Penlin addition when 2015/11/03 for event_setting page -->
+<event_name>Event name</event_name>
+<enable_this_event>Enable this event</enable_this_event>
+<enable_this_recording>Enable this recording</enable_this_recording>
+<enable_this_trigger>Enable this trigger</enable_this_trigger>
+<priority>Priority</priority>
+<high>High</high>
+<normal>Normal</normal>
+<low>Low</low>
+<delay_for>Detect next event trigger after</delay_for>
+<seconds>seconds</seconds>
+<seconds_before_detecting_next_event>second(s).</seconds_before_detecting_next_event>
+<seconds_before_recording> seconds before recording</seconds_before_recording>
+<schedule>Schedule</schedule>
+<trigger>Trigger</trigger>
+<trigger_D_O_1_for>Trigger digital output 1 for</trigger_D_O_1_for>
+<trigger_D_O_2_for>Trigger digital output 2 for</trigger_D_O_2_for>
+<trigger_D_O_for>Trigger digital output for</trigger_D_O_for>
+<trigger_duration>Trigger duration</trigger_duration>
+<trigger_event_when_detected_audio>Trigger event when detected audio</trigger_event_when_detected_audio>
+<trigger_every>Trigger every other</trigger_every>
+<trigger_name>Trigger name</trigger_name>
+<trigger_settings>Trigger Settings</trigger_settings>
+<trigger_time>Trigger time</trigger_time>
+<trigger_type>Trigger type</trigger_type>
+<triggered>Triggered</triggered>
+<action>Action</action>
+<event_schedule>Event schedule</event_schedule>
+<event_server>event server</event_server>
+<event_settings>Event settings</event_settings>
+<event_condition>Event trigger</event_condition>
+<event_media>event media</event_media>
+<sun>Sun</sun>
+<mon>Mon</mon>
+<tue>Tue</tue>
+<wed>Wed</wed>
+<thu>Thu</thu>
+<fri>Fri</fri>
+<sat>Sat</sat>
+<time>Time</time>
+<always>Always</always>
+<from>From</from>
+<to>to</to>
+<video_motion_detection>Video motion detection</video_motion_detection>
+<profile>Profile</profile>
+<note_please_configure>Note: Please configure</note_please_configure>
+<motion_detection>Motion detection</motion_detection>
+<first>first</first>
+<periodic>Periodically</periodic>
+<trigger_every>Trigger every other</trigger_every>
+<minutes>minute(s)</minutes>
+<digital_input>Digital input</digital_input>
+<system_boot>System boot</system_boot>
+<recording_notify>Recording notify</recording_notify>
+<audio_detection>Audio detection</audio_detection>
+<rises_above>rises above</rises_above>
+<falls_below>falls below</falls_below>
+<alarm_level>alarm level</alarm_level>
+<camera_tampering_detection>Camera tampering detection</camera_tampering_detection>
+<check_sd_card>Please check SD card if already prepared or suggest formatting again</check_sd_card>
+<tampering>Tampering detection</tampering>
+<too_blurry>Too blurry</too_blurry>
+<too_bright>Too bright</too_bright>
+<too_dark>Too dark</too_dark>
+<active>Active</active>
+<active_to_normal>Active to Normal</active_to_normal>
+<normal_to_active>Normal to Active</normal_to_active>
+<the_name_has_already_existed>This name is already registered. Please try another name or delete the old one.</the_name_has_already_existed>
+<the_name_has_already_existed_please_try_another_name_or_delete_the_old_one>This name is already registered. Please try another name or delete the old one.</the_name_has_already_existed_please_try_another_name_or_delete_the_old_one>
+<the_pw_should_contain_at_least_8_chars>The password should contain at least 8 characters.</the_pw_should_contain_at_least_8_chars>
+<no_more_list_for_audioclip_to_enter>Could not add a new audio clip because the maximum number of audio clips is 20.</no_more_list_for_audioclip_to_enter>
+<no_more_list_for_event_to_enter>Could not add a new event setting because the maximum number of event settings is 3.</no_more_list_for_event_to_enter>
+<no_more_list_for_media_to_enter>Could not add a new media setting because the maximum number of media settings is 5.</no_more_list_for_media_to_enter>
+<no_more_list_for_recording_to_enter>Could not add a new recording setting because the maximum number of recordings is 2.</no_more_list_for_recording_to_enter>
+<no_more_list_for_server_to_enter>Could not add a new server setting because the maximum number of server settings is 5.</no_more_list_for_server_to_enter>
+<no_more_list_to_enter>Could not add a new list because the maximum number of lists is 10</no_more_list_to_enter>
+<note_please_configure>Note: Please configure</note_please_configure>
+<manual_trigger>Manual triggers</manual_trigger>
+<backup_media_while_network_loss>Backup media if the network is disconnected</backup_media_while_network_loss>
+<puremedia>Media</puremedia>
+<pureserver>Server</pureserver>
+<extra_parameter>Extra parameter</extra_parameter>
+<sd>SD</sd>
+<sd_test>SD test</sd_test>
+<view>View</view>
+<create_folders_by_date_time_and_hour_automatically>Create folders by date time and hour automatically</create_folders_by_date_time_and_hour_automatically>
+<add_server>Add server</add_server>
+<add_media>Add media</add_media>
+<save_event>Save event</save_event>
+<save_server>Save server</save_server>
+<save_media>Save media</save_media>
+<event>Event</event>
+<server>Server</server>
+<media>Media</media>
+<passive_mode>Passive mode</passive_mode>
+<server_type>Server type</server_type>
+<this_server_requires_a_secure_connection_ssl>This server requires a secure connection (SSL)</this_server_requires_a_secure_connection_ssl>
+<network_storage>Network storage</network_storage>
+<network_storage_location>Network storage location</network_storage_location>
+<_for_example_my_nas_disk_folder_>(For example: \\my_nas\disk\folder)</_for_example_my_nas_disk_folder_>
+<workgroup>Workgroup</workgroup>
+<media_freespace>Available memory space</media_freespace>
+<media_name>Media name</media_name>
+<media_option>Media Option</media_option>
+<media_options>Media Options</media_options>
+<media_settings>Media settings</media_settings>
+<media_size_is_over_free_space>Exceed maximum memory space.</media_size_is_over_free_space>
+<media_type>Media type</media_type>
+<attached_media>Attached media:</attached_media>
+<video_clip>Video clip</video_clip>
+<system_log>System log</system_log>
+<pre_event_image_s>pre-event image(s)</pre_event_image_s>
+<post_event_image_s>post-event image(s)</post_event_image_s>
+<pre_event_recording>Pre-event recording</pre_event_recording>
+<pre_event_recording_seconds_warnming_message>Pre-event recording seconds can not be larger than maximum duration.</pre_event_recording_seconds_warnming_message>
+<pre_event_seconds_can_not_be_larger_than_max_duration>Pre-event recording seconds can not be larger than maximum duration.</pre_event_seconds_can_not_be_larger_than_max_duration>
+<source>Source</source>
+<maximum_duration>Maximum duration</maximum_duration>
+<maximum_file_size>Maximum file size</maximum_file_size>
+<file_name_prefix>File name prefix</file_name_prefix>
+<add_date_and_time_suffix_to_file_name>Add date and time suffix to file name</add_date_and_time_suffix_to_file_name>
+<toRight>&gt;&gt;</toRight>
+<toLeft>&lt;&lt;</toLeft>
+<available_vadp_triggers>Available VADP triggers pool</available_vadp_triggers>
+<enabled_vadp_tirggers>Enabled Triggers for Event</enabled_vadp_tirggers>
+<person>people</person>
+<event_rules>Analytics Event Rules</event_rules>
+<trigger_source>Source</trigger_source>
+<rule_condition>Trigger</rule_condition>
+<!-- End of Addition -->
+</lang>
+<lang>
+<add>Add</add>
+<cancel>Cancel</cancel>
+<change_direction>Change direction</change_direction>
+<close>Close</close>
+<configurations>Configurations</configurations>
+<counting_report>Counting report</counting_report>
+<csv>csv</csv>
+<date>Date</date>
+<day>Day</day>
+<today>Today</today>
+<delete>Delete</delete>
+<direction>Direction</direction>
+<export_data>Export data</export_data>
+<option_localtime_utc>UTC time</option_localtime_utc>
+<option_localtime_local>Camera local</option_localtime_local>
+<enable_visual_confirmation>Visual confirmation of object</enable_visual_confirmation>
+<enable_periodic_alarm>Enable periodic alarm</enable_periodic_alarm>
+<event_list>Event List</event_list>
+<exceed_field_point_num>Exceed the maximum number of points: 20</exceed_field_point_num>
+<database_preparing_please_try_later>Database is preparing. Please try again later.</database_preparing_please_try_later>
+<format>Format</format>
+<from>From</from>
+<hour>Hour</hour>
+<in>In</in>
+<interval>Interval</interval>
+<invalid_roi>Invalid ROI</invalid_roi>
+<iva_analytics>Analytics</iva_analytics>
+<iva_eventdb>Event</iva_eventdb>
+<iva_report>Report</iva_report>
+<iva_rule_name>Rule name</iva_rule_name>
+<iva_rule_type>Rule type</iva_rule_type>
+<iva_rules>Rules</iva_rules>
+<iva_statistic>Statistic</iva_statistic>
+<iva_statistic_describe_objcount>Statistics</iva_statistic_describe_objcount>
+<iva_system>IVA System</iva_system>
+<json>json</json>
+<maximum_object_size>Maximum object size</maximum_object_size>
+<min15>15 minutes</min15>
+<minimum_object_size>Minimum object size</minimum_object_size>
+<min_obj_size_larger_than_max_obj_size>Minimize object size can't be larger than Maximize object size</min_obj_size_larger_than_max_obj_size>
+<minute>Minute</minute>
+<name>Name</name>
+<out>Out</out>
+<roi>Detection area</roi>
+<remove>Remove</remove>
+<report>Report</report>
+<report_time>Report time</report_time>
+<reset_time_interval>Reset every</reset_time_interval>
+<report_time_interval>Report  interval</report_time_interval>
+<save>Save</save>
+<search>Search</search>
+<search_result>Search result</search_result>
+<seconds>Seconds</seconds>
+<sensitivity>Sensitivity</sensitivity>
+<stop_search>Stop search</stop_search>
+<time>Time</time>
+<to>To</to>
+<toggle>Toggle</toggle>
+<type>Type</type>
+<username>Username</username>
+<setting>Setting</setting>
+<password>Password</password>
+<last_time>Last time</last_time>
+<line_ref>Reference line</line_ref>
+<ss_map_label>Start-Stop map</ss_map_label>
+<ss_map_unit>pairs</ss_map_unit>
+<empty_data>Empty data, no people have been detected yet.</empty_data>
+<internal_error>Get Start-Stop Map pairs failed due to internal error.</internal_error>	
+<loiter_alarm_interval>Alarm interval</loiter_alarm_interval>
+<loitering_duration>Loitering duration</loitering_duration>
+<xml>xml</xml>
+<!-- Penlin addition when 2015/10/12 for event_push page -->
+	<!-- event_push.html required -->
+<Servers>Servers</Servers>
+<status>status</status>
+<server_name>Name</server_name>
+<server_protocol>Protocol</server_protocol>
+<address_location>Address</address_location>
+<report_aggregation>Aggregation Level</report_aggregation>
+<report_schedule>Delivery Schedule</report_schedule>
+<report_schedule_note>schedule time must be loner than or equal with aggregation level</report_schedule_note>
+<report_format>Foramt</report_format>
+<report_lite>Lite</report_lite>
+<report_lite_note>lite mode would ignore date with all zero in/out.</report_lite_note>
+<report_localtime>localtime</report_localtime>
+<report_localtime_note>Represent StartTime, EndTime in camera local time zone with ISO8601 format. Or defaultly in UTC time. </report_localtime_note>
+<ServerConfigurations>Configurations</ServerConfigurations>
+<server_address>Server address</server_address>
+<user_name>Username</user_name>
+<!--password></password-->
+<server_port>Port</server_port>
+<email>Email</email>
+<sender_email_address>Sender email</sender_email_address>
+<recipient_email_address>Recipient email</recipient_email_address>
+<ftp>FTP</ftp>
+<remote_folder_name>FTP folder name</remote_folder_name>
+<reportname_format>Filename format</reportname_format>
+<filename_format_note>support customize report filename format: [default: report_%T.%F] &lt;br&gt;%T: report timestamp;  %M: Mac address;  %D: DeviceID;  %G: GroupID&lt;br&gt;%S: Schedule time in second;  %A: Aggregation level in second&lt;br&gt;%N: Server name;  %F: report format;  %L: LITE or empty</filename_format_note>
+<http>HTTP</http>
+<url>Server address</url>
+<server_uri>Server uri</server_uri>
+
+<test>Test</test>
+<!--close></close-->
+<!--save></save-->
+	<!-- livereport.html required -->
+<enabled_di_task_to_switch_counting_feature>Enable Digital Input (DI) to switch Counting On/Off</enabled_di_task_to_switch_counting_feature>
+<minimum_signal_interval>Mininum DI signal detection interval : </minimum_signal_interval>
+<starttime>StartTime</starttime>
+<endtime>EndTime  </endtime>
+<now>Now</now>
+<counting_data_pull>Pull Event</counting_data_pull>
+<send>Send</send>
+<get_cgi>CGI</get_cgi>
+<localtime>local time</localtime>
+<invalid_starttime_format>You have used an invalid format for StartTime!</invalid_starttime_format>
+<invalid_endtime_format>You have used an invalid format for EndTime</invalid_endtime_format>
+	<!-- common.js required -->
+<you_have_used_invalid_characters_lg>You have used invalid characters. These invalid characters are: \, /, :, *, ., ?, &quot;, ', &lt;, &gt;, &amp;, |</you_have_used_invalid_characters_lg>
+<you_have_used_invalid_characters_sh>You have used invalid characters. These invalid characters are: &quot;, ', &lt;, &gt;, &amp;</you_have_used_invalid_characters_sh>
+<you_have_used_invalid_characters_host>You have used invalid characters. These invalid characters are: &quot;, ', &lt;, &gt;, =, &amp;</you_have_used_invalid_characters_host>
+<field_cannot_be_empty>This field cannot be empty</field_cannot_be_empty>
+<space_is_invalid>Do not type a space key in the field.</space_is_invalid>
+<accessname_can_only_contains_numeric_alpha>Only numeric and alphabetical characters are allowed for access name.</accessname_can_only_contains_numeric_alpha>
+<please_input_a_valid_email_address>Please input a valid email address.</please_input_a_valid_email_address>
+<please_input_a_valid_value>Please input a valid value.</please_input_a_valid_value>
+<please_input_a_value_between_0_and_255>Please input a value between 0 and 255</please_input_a_value_between_0_and_255>
+<please_enter_a_valid_ip_address>Please enter a valid IP address.</please_enter_a_valid_ip_address>
+
+	<!-- event_push.js required -->
+<you_have_used_invalid_characters_servername>You have used invalid characters. These invalid characters are: \, /, :, *, ?, &quot;, ', &lt;, &gt;, &amp;, |, %</you_have_used_invalid_characters_servername>
+<you_have_used_invalid_characters_folder>You have used invalid characters. These invalid characters are:  /, :, *,?, &quot;, ', &lt;, &gt;, &amp;, |</you_have_used_invalid_characters_folder>
+<you_have_used_invalid_characters_foldername>You have used invalid characters. These invalid characters are: :, *, ?, &quot;, ', &lt;, &gt;, &amp;, |,  (space)</you_have_used_invalid_characters_foldername>
+<you_have_used_invalid_characters_fileformat>You have used invalid characters. These invalid characters are: \, /, :, *, ?, &quot;, ', &lt;, &gt;, &amp;, |</you_have_used_invalid_characters_fileformat>
+<your_have_used_name_with_too_long_or_short_length>You have input a name in too long or too short length!</your_have_used_name_with_too_long_or_short_length>
+<you_have_used_fileformat_without_time_variable_T>Warning! You have used a filename without time variable %T. This might cause your reports be overridden!</you_have_used_fileformat_without_time_variable_T>
+<invalid_protocol>Please Choose a valid Protocol!</invalid_protocol>
+<invalid_schedule_time>schedule time must be larger than aggregation level!</invalid_schedule_time>
+<!-- End of Addition -->
+<!-- Penlin addition when 2015/11/03 for event_setting page -->
+<event_name>Event name</event_name>
+<enable_this_event>Enable this event</enable_this_event>
+<enable_this_recording>Enable this recording</enable_this_recording>
+<enable_this_trigger>Enable this trigger</enable_this_trigger>
+<priority>Priority</priority>
+<high>High</high>
+<normal>Normal</normal>
+<low>Low</low>
+<delay_for>Detect next event trigger after</delay_for>
+<seconds>seconds</seconds>
+<seconds_before_detecting_next_event>second(s).</seconds_before_detecting_next_event>
+<seconds_before_recording> seconds before recording</seconds_before_recording>
+<schedule>Schedule</schedule>
+<trigger>Trigger</trigger>
+<trigger_D_O_1_for>Trigger digital output 1 for</trigger_D_O_1_for>
+<trigger_D_O_2_for>Trigger digital output 2 for</trigger_D_O_2_for>
+<trigger_D_O_for>Trigger digital output for</trigger_D_O_for>
+<trigger_duration>Trigger duration</trigger_duration>
+<trigger_event_when_detected_audio>Trigger event when detected audio</trigger_event_when_detected_audio>
+<trigger_every>Trigger every other</trigger_every>
+<trigger_name>Trigger name</trigger_name>
+<trigger_settings>Trigger Settings</trigger_settings>
+<trigger_time>Trigger time</trigger_time>
+<trigger_type>Trigger type</trigger_type>
+<triggered>Triggered</triggered>
+<action>Action</action>
+<event_schedule>Event schedule</event_schedule>
+<event_server>event server</event_server>
+<event_settings>Event settings</event_settings>
+<event_condition>Event trigger</event_condition>
+<event_media>event media</event_media>
+<sun>Sun</sun>
+<mon>Mon</mon>
+<tue>Tue</tue>
+<wed>Wed</wed>
+<thu>Thu</thu>
+<fri>Fri</fri>
+<sat>Sat</sat>
+<time>Time</time>
+<always>Always</always>
+<from>From</from>
+<to>to</to>
+<video_motion_detection>Video motion detection</video_motion_detection>
+<profile>Profile</profile>
+<note_please_configure>Note: Please configure</note_please_configure>
+<motion_detection>Motion detection</motion_detection>
+<first>first</first>
+<periodic>Periodically</periodic>
+<trigger_every>Trigger every other</trigger_every>
+<minutes>minute(s)</minutes>
+<digital_input>Digital input</digital_input>
+<system_boot>System boot</system_boot>
+<recording_notify>Recording notify</recording_notify>
+<audio_detection>Audio detection</audio_detection>
+<rises_above>rises above</rises_above>
+<falls_below>falls below</falls_below>
+<alarm_level>alarm level</alarm_level>
+<camera_tampering_detection>Camera tampering detection</camera_tampering_detection>
+<check_sd_card>Please check SD card if already prepared or suggest formatting again</check_sd_card>
+<tampering>Tampering detection</tampering>
+<too_blurry>Too blurry</too_blurry>
+<too_bright>Too bright</too_bright>
+<too_dark>Too dark</too_dark>
+<active>Active</active>
+<active_to_normal>Active to Normal</active_to_normal>
+<normal_to_active>Normal to Active</normal_to_active>
+<the_name_has_already_existed>This name is already registered. Please try another name or delete the old one.</the_name_has_already_existed>
+<the_name_has_already_existed_please_try_another_name_or_delete_the_old_one>This name is already registered. Please try another name or delete the old one.</the_name_has_already_existed_please_try_another_name_or_delete_the_old_one>
+<the_pw_should_contain_at_least_8_chars>The password should contain at least 8 characters.</the_pw_should_contain_at_least_8_chars>
+<no_more_list_for_audioclip_to_enter>Could not add a new audio clip because the maximum number of audio clips is 20.</no_more_list_for_audioclip_to_enter>
+<no_more_list_for_event_to_enter>Could not add a new event setting because the maximum number of event settings is 3.</no_more_list_for_event_to_enter>
+<no_more_list_for_media_to_enter>Could not add a new media setting because the maximum number of media settings is 5.</no_more_list_for_media_to_enter>
+<no_more_list_for_recording_to_enter>Could not add a new recording setting because the maximum number of recordings is 2.</no_more_list_for_recording_to_enter>
+<no_more_list_for_server_to_enter>Could not add a new server setting because the maximum number of server settings is 5.</no_more_list_for_server_to_enter>
+<no_more_list_to_enter>Could not add a new list because the maximum number of lists is 10</no_more_list_to_enter>
+<note_please_configure>Note: Please configure</note_please_configure>
+<manual_trigger>Manual triggers</manual_trigger>
+<backup_media_while_network_loss>Backup media if the network is disconnected</backup_media_while_network_loss>
+<puremedia>Media</puremedia>
+<pureserver>Server</pureserver>
+<extra_parameter>Extra parameter</extra_parameter>
+<sd>SD</sd>
+<sd_test>SD test</sd_test>
+<view>View</view>
+<create_folders_by_date_time_and_hour_automatically>Create folders by date time and hour automatically</create_folders_by_date_time_and_hour_automatically>
+<add_server>Add server</add_server>
+<add_media>Add media</add_media>
+<save_event>Save event</save_event>
+<save_server>Save server</save_server>
+<save_media>Save media</save_media>
+<event>Event</event>
+<server>Server</server>
+<media>Media</media>
+<passive_mode>Passive mode</passive_mode>
+<server_type>Server type</server_type>
+<this_server_requires_a_secure_connection_ssl>This server requires a secure connection (SSL)</this_server_requires_a_secure_connection_ssl>
+<network_storage>Network storage</network_storage>
+<network_storage_location>Network storage location</network_storage_location>
+<_for_example_my_nas_disk_folder_>(For example: \\my_nas\disk\folder)</_for_example_my_nas_disk_folder_>
+<workgroup>Workgroup</workgroup>
+<media_freespace>Available memory space</media_freespace>
+<media_name>Media name</media_name>
+<media_option>Media Option</media_option>
+<media_options>Media Options</media_options>
+<media_settings>Media settings</media_settings>
+<media_size_is_over_free_space>Exceed maximum memory space.</media_size_is_over_free_space>
+<media_type>Media type</media_type>
+<attached_media>Attached media:</attached_media>
+<video_clip>Video clip</video_clip>
+<system_log>System log</system_log>
+<pre_event_image_s>pre-event image(s)</pre_event_image_s>
+<post_event_image_s>post-event image(s)</post_event_image_s>
+<pre_event_recording>Pre-event recording</pre_event_recording>
+<pre_event_recording_seconds_warnming_message>Pre-event recording seconds can not be larger than maximum duration.</pre_event_recording_seconds_warnming_message>
+<pre_event_seconds_can_not_be_larger_than_max_duration>Pre-event recording seconds can not be larger than maximum duration.</pre_event_seconds_can_not_be_larger_than_max_duration>
+<source>Source</source>
+<maximum_duration>Maximum duration</maximum_duration>
+<maximum_file_size>Maximum file size</maximum_file_size>
+<file_name_prefix>File name prefix</file_name_prefix>
+<add_date_and_time_suffix_to_file_name>Add date and time suffix to file name</add_date_and_time_suffix_to_file_name>
+<toRight>&gt;&gt;</toRight>
+<toLeft>&lt;&lt;</toLeft>
+<available_vadp_triggers>Available VADP triggers pool</available_vadp_triggers>
+<enabled_vadp_tirggers>Enabled Triggers for Event</enabled_vadp_tirggers>
+<person>people</person>
+<event_rules>Analytics Event Rules</event_rules>
+<trigger_source>Source</trigger_source>
+<rule_condition>Trigger</rule_condition>
+<!-- End of Addition -->
+</lang>
+<lang>
+<add>Add</add>
+<cancel>Cancel</cancel>
+<change_direction>Change direction</change_direction>
+<close>Close</close>
+<configurations>Configurations</configurations>
+<counting_report>Counting report</counting_report>
+<csv>csv</csv>
+<date>Date</date>
+<day>Day</day>
+<today>Today</today>
+<delete>Delete</delete>
+<direction>Direction</direction>
+<export_data>Export data</export_data>
+<option_localtime_utc>UTC time</option_localtime_utc>
+<option_localtime_local>Camera local</option_localtime_local>
+<enable_visual_confirmation>Visual confirmation of object</enable_visual_confirmation>
+<enable_periodic_alarm>Enable periodic alarm</enable_periodic_alarm>
+<event_list>Event List</event_list>
+<exceed_field_point_num>Exceed the maximum number of points: 20</exceed_field_point_num>
+<database_preparing_please_try_later>Database is preparing. Please try again later.</database_preparing_please_try_later>
+<format>Format</format>
+<from>From</from>
+<hour>Hour</hour>
+<in>In</in>
+<interval>Interval</interval>
+<invalid_roi>Invalid ROI</invalid_roi>
+<iva_analytics>Analytics</iva_analytics>
+<iva_eventdb>Event</iva_eventdb>
+<iva_report>Report</iva_report>
+<iva_rule_name>Rule name</iva_rule_name>
+<iva_rule_type>Rule type</iva_rule_type>
+<iva_rules>Rules</iva_rules>
+<iva_statistic>Statistic</iva_statistic>
+<iva_statistic_describe_objcount>Statistics</iva_statistic_describe_objcount>
+<iva_system>IVA System</iva_system>
+<json>json</json>
+<maximum_object_size>Maximum object size</maximum_object_size>
+<min15>15 minutes</min15>
+<minimum_object_size>Minimum object size</minimum_object_size>
+<min_obj_size_larger_than_max_obj_size>Minimize object size can't be larger than Maximize object size</min_obj_size_larger_than_max_obj_size>
+<minute>Minute</minute>
+<name>Name</name>
+<out>Out</out>
+<roi>Detection area</roi>
+<remove>Remove</remove>
+<report>Report</report>
+<report_time>Report time</report_time>
+<reset_time_interval>Reset every</reset_time_interval>
+<report_time_interval>Report  interval</report_time_interval>
+<save>Save</save>
+<search>Search</search>
+<search_result>Search result</search_result>
+<seconds>Seconds</seconds>
+<sensitivity>Sensitivity</sensitivity>
+<stop_search>Stop search</stop_search>
+<time>Time</time>
+<to>To</to>
+<toggle>Toggle</toggle>
+<type>Type</type>
+<username>Username</username>
+<setting>Setting</setting>
+<password>Password</password>
+<last_time>Last time</last_time>
+<line_ref>Reference line</line_ref>
+<ss_map_label>Start-Stop map</ss_map_label>
+<ss_map_unit>pairs</ss_map_unit>
+<empty_data>Empty data, no people have been detected yet.</empty_data>
+<internal_error>Get Start-Stop Map pairs failed due to internal error.</internal_error>	
+<loiter_alarm_interval>Alarm interval</loiter_alarm_interval>
+<loitering_duration>Loitering duration</loitering_duration>
+<xml>xml</xml>
+<!-- Penlin addition when 2015/10/12 for event_push page -->
+	<!-- event_push.html required -->
+<Servers>Servers</Servers>
+<status>status</status>
+<server_name>Name</server_name>
+<server_protocol>Protocol</server_protocol>
+<address_location>Address</address_location>
+<report_aggregation>Aggregation Level</report_aggregation>
+<report_schedule>Delivery Schedule</report_schedule>
+<report_schedule_note>schedule time must be loner than or equal with aggregation level</report_schedule_note>
+<report_format>Foramt</report_format>
+<report_lite>Lite</report_lite>
+<report_lite_note>lite mode would ignore date with all zero in/out.</report_lite_note>
+<report_localtime>localtime</report_localtime>
+<report_localtime_note>Represent StartTime, EndTime in camera local time zone with ISO8601 format. Or defaultly in UTC time. </report_localtime_note>
+<ServerConfigurations>Configurations</ServerConfigurations>
+<server_address>Server address</server_address>
+<user_name>Username</user_name>
+<!--password></password-->
+<server_port>Port</server_port>
+<email>Email</email>
+<sender_email_address>Sender email</sender_email_address>
+<recipient_email_address>Recipient email</recipient_email_address>
+<ftp>FTP</ftp>
+<remote_folder_name>FTP folder name</remote_folder_name>
+<reportname_format>Filename format</reportname_format>
+<filename_format_note>support customize report filename format: [default: report_%T.%F] &lt;br&gt;%T: report timestamp;  %M: Mac address;  %D: DeviceID;  %G: GroupID&lt;br&gt;%S: Schedule time in second;  %A: Aggregation level in second&lt;br&gt;%N: Server name;  %F: report format;  %L: LITE or empty</filename_format_note>
+<http>HTTP</http>
+<url>Server address</url>
+<server_uri>Server uri</server_uri>
+
+<test>Test</test>
+<!--close></close-->
+<!--save></save-->
+	<!-- livereport.html required -->
+<enabled_di_task_to_switch_counting_feature>Enable Digital Input (DI) to switch Counting On/Off</enabled_di_task_to_switch_counting_feature>
+<minimum_signal_interval>Mininum DI signal detection interval : </minimum_signal_interval>
+<starttime>StartTime</starttime>
+<endtime>EndTime  </endtime>
+<now>Now</now>
+<counting_data_pull>Pull Event</counting_data_pull>
+<send>Send</send>
+<get_cgi>CGI</get_cgi>
+<localtime>local time</localtime>
+<invalid_starttime_format>You have used an invalid format for StartTime!</invalid_starttime_format>
+<invalid_endtime_format>You have used an invalid format for EndTime</invalid_endtime_format>
+	<!-- common.js required -->
+<you_have_used_invalid_characters_lg>You have used invalid characters. These invalid characters are: \, /, :, *, ., ?, &quot;, ', &lt;, &gt;, &amp;, |</you_have_used_invalid_characters_lg>
+<you_have_used_invalid_characters_sh>You have used invalid characters. These invalid characters are: &quot;, ', &lt;, &gt;, &amp;</you_have_used_invalid_characters_sh>
+<you_have_used_invalid_characters_host>You have used invalid characters. These invalid characters are: &quot;, ', &lt;, &gt;, =, &amp;</you_have_used_invalid_characters_host>
+<field_cannot_be_empty>This field cannot be empty</field_cannot_be_empty>
+<space_is_invalid>Do not type a space key in the field.</space_is_invalid>
+<accessname_can_only_contains_numeric_alpha>Only numeric and alphabetical characters are allowed for access name.</accessname_can_only_contains_numeric_alpha>
+<please_input_a_valid_email_address>Please input a valid email address.</please_input_a_valid_email_address>
+<please_input_a_valid_value>Please input a valid value.</please_input_a_valid_value>
+<please_input_a_value_between_0_and_255>Please input a value between 0 and 255</please_input_a_value_between_0_and_255>
+<please_enter_a_valid_ip_address>Please enter a valid IP address.</please_enter_a_valid_ip_address>
+
+	<!-- event_push.js required -->
+<you_have_used_invalid_characters_servername>You have used invalid characters. These invalid characters are: \, /, :, *, ?, &quot;, ', &lt;, &gt;, &amp;, |, %</you_have_used_invalid_characters_servername>
+<you_have_used_invalid_characters_folder>You have used invalid characters. These invalid characters are:  /, :, *,?, &quot;, ', &lt;, &gt;, &amp;, |</you_have_used_invalid_characters_folder>
+<you_have_used_invalid_characters_foldername>You have used invalid characters. These invalid characters are: :, *, ?, &quot;, ', &lt;, &gt;, &amp;, |,  (space)</you_have_used_invalid_characters_foldername>
+<you_have_used_invalid_characters_fileformat>You have used invalid characters. These invalid characters are: \, /, :, *, ?, &quot;, ', &lt;, &gt;, &amp;, |</you_have_used_invalid_characters_fileformat>
+<your_have_used_name_with_too_long_or_short_length>You have input a name in too long or too short length!</your_have_used_name_with_too_long_or_short_length>
+<you_have_used_fileformat_without_time_variable_T>Warning! You have used a filename without time variable %T. This might cause your reports be overridden!</you_have_used_fileformat_without_time_variable_T>
+<invalid_protocol>Please Choose a valid Protocol!</invalid_protocol>
+<invalid_schedule_time>schedule time must be larger than aggregation level!</invalid_schedule_time>
+<!-- End of Addition -->
+<!-- Penlin addition when 2015/11/03 for event_setting page -->
+<event_name>Event name</event_name>
+<enable_this_event>Enable this event</enable_this_event>
+<enable_this_recording>Enable this recording</enable_this_recording>
+<enable_this_trigger>Enable this trigger</enable_this_trigger>
+<priority>Priority</priority>
+<high>High</high>
+<normal>Normal</normal>
+<low>Low</low>
+<delay_for>Detect next event trigger after</delay_for>
+<seconds>seconds</seconds>
+<seconds_before_detecting_next_event>second(s).</seconds_before_detecting_next_event>
+<seconds_before_recording> seconds before recording</seconds_before_recording>
+<schedule>Schedule</schedule>
+<trigger>Trigger</trigger>
+<trigger_D_O_1_for>Trigger digital output 1 for</trigger_D_O_1_for>
+<trigger_D_O_2_for>Trigger digital output 2 for</trigger_D_O_2_for>
+<trigger_D_O_for>Trigger digital output for</trigger_D_O_for>
+<trigger_duration>Trigger duration</trigger_duration>
+<trigger_event_when_detected_audio>Trigger event when detected audio</trigger_event_when_detected_audio>
+<trigger_every>Trigger every other</trigger_every>
+<trigger_name>Trigger name</trigger_name>
+<trigger_settings>Trigger Settings</trigger_settings>
+<trigger_time>Trigger time</trigger_time>
+<trigger_type>Trigger type</trigger_type>
+<triggered>Triggered</triggered>
+<action>Action</action>
+<event_schedule>Event schedule</event_schedule>
+<event_server>event server</event_server>
+<event_settings>Event settings</event_settings>
+<event_condition>Event trigger</event_condition>
+<event_media>event media</event_media>
+<sun>Sun</sun>
+<mon>Mon</mon>
+<tue>Tue</tue>
+<wed>Wed</wed>
+<thu>Thu</thu>
+<fri>Fri</fri>
+<sat>Sat</sat>
+<time>Time</time>
+<always>Always</always>
+<from>From</from>
+<to>to</to>
+<video_motion_detection>Video motion detection</video_motion_detection>
+<profile>Profile</profile>
+<note_please_configure>Note: Please configure</note_please_configure>
+<motion_detection>Motion detection</motion_detection>
+<first>first</first>
+<periodic>Periodically</periodic>
+<trigger_every>Trigger every other</trigger_every>
+<minutes>minute(s)</minutes>
+<digital_input>Digital input</digital_input>
+<system_boot>System boot</system_boot>
+<recording_notify>Recording notify</recording_notify>
+<audio_detection>Audio detection</audio_detection>
+<rises_above>rises above</rises_above>
+<falls_below>falls below</falls_below>
+<alarm_level>alarm level</alarm_level>
+<camera_tampering_detection>Camera tampering detection</camera_tampering_detection>
+<check_sd_card>Please check SD card if already prepared or suggest formatting again</check_sd_card>
+<tampering>Tampering detection</tampering>
+<too_blurry>Too blurry</too_blurry>
+<too_bright>Too bright</too_bright>
+<too_dark>Too dark</too_dark>
+<active>Active</active>
+<active_to_normal>Active to Normal</active_to_normal>
+<normal_to_active>Normal to Active</normal_to_active>
+<the_name_has_already_existed>This name is already registered. Please try another name or delete the old one.</the_name_has_already_existed>
+<the_name_has_already_existed_please_try_another_name_or_delete_the_old_one>This name is already registered. Please try another name or delete the old one.</the_name_has_already_existed_please_try_another_name_or_delete_the_old_one>
+<the_pw_should_contain_at_least_8_chars>The password should contain at least 8 characters.</the_pw_should_contain_at_least_8_chars>
+<no_more_list_for_audioclip_to_enter>Could not add a new audio clip because the maximum number of audio clips is 20.</no_more_list_for_audioclip_to_enter>
+<no_more_list_for_event_to_enter>Could not add a new event setting because the maximum number of event settings is 3.</no_more_list_for_event_to_enter>
+<no_more_list_for_media_to_enter>Could not add a new media setting because the maximum number of media settings is 5.</no_more_list_for_media_to_enter>
+<no_more_list_for_recording_to_enter>Could not add a new recording setting because the maximum number of recordings is 2.</no_more_list_for_recording_to_enter>
+<no_more_list_for_server_to_enter>Could not add a new server setting because the maximum number of server settings is 5.</no_more_list_for_server_to_enter>
+<no_more_list_to_enter>Could not add a new list because the maximum number of lists is 10</no_more_list_to_enter>
+<note_please_configure>Note: Please configure</note_please_configure>
+<manual_trigger>Manual triggers</manual_trigger>
+<backup_media_while_network_loss>Backup media if the network is disconnected</backup_media_while_network_loss>
+<puremedia>Media</puremedia>
+<pureserver>Server</pureserver>
+<extra_parameter>Extra parameter</extra_parameter>
+<sd>SD</sd>
+<sd_test>SD test</sd_test>
+<view>View</view>
+<create_folders_by_date_time_and_hour_automatically>Create folders by date time and hour automatically</create_folders_by_date_time_and_hour_automatically>
+<add_server>Add server</add_server>
+<add_media>Add media</add_media>
+<save_event>Save event</save_event>
+<save_server>Save server</save_server>
+<save_media>Save media</save_media>
+<event>Event</event>
+<server>Server</server>
+<media>Media</media>
+<passive_mode>Passive mode</passive_mode>
+<server_type>Server type</server_type>
+<this_server_requires_a_secure_connection_ssl>This server requires a secure connection (SSL)</this_server_requires_a_secure_connection_ssl>
+<network_storage>Network storage</network_storage>
+<network_storage_location>Network storage location</network_storage_location>
+<_for_example_my_nas_disk_folder_>(For example: \\my_nas\disk\folder)</_for_example_my_nas_disk_folder_>
+<workgroup>Workgroup</workgroup>
+<media_freespace>Available memory space</media_freespace>
+<media_name>Media name</media_name>
+<media_option>Media Option</media_option>
+<media_options>Media Options</media_options>
+<media_settings>Media settings</media_settings>
+<media_size_is_over_free_space>Exceed maximum memory space.</media_size_is_over_free_space>
+<media_type>Media type</media_type>
+<attached_media>Attached media:</attached_media>
+<video_clip>Video clip</video_clip>
+<system_log>System log</system_log>
+<pre_event_image_s>pre-event image(s)</pre_event_image_s>
+<post_event_image_s>post-event image(s)</post_event_image_s>
+<pre_event_recording>Pre-event recording</pre_event_recording>
+<pre_event_recording_seconds_warnming_message>Pre-event recording seconds can not be larger than maximum duration.</pre_event_recording_seconds_warnming_message>
+<pre_event_seconds_can_not_be_larger_than_max_duration>Pre-event recording seconds can not be larger than maximum duration.</pre_event_seconds_can_not_be_larger_than_max_duration>
+<source>Source</source>
+<maximum_duration>Maximum duration</maximum_duration>
+<maximum_file_size>Maximum file size</maximum_file_size>
+<file_name_prefix>File name prefix</file_name_prefix>
+<add_date_and_time_suffix_to_file_name>Add date and time suffix to file name</add_date_and_time_suffix_to_file_name>
+<toRight>&gt;&gt;</toRight>
+<toLeft>&lt;&lt;</toLeft>
+<available_vadp_triggers>Available VADP triggers pool</available_vadp_triggers>
+<enabled_vadp_tirggers>Enabled Triggers for Event</enabled_vadp_tirggers>
+<person>people</person>
+<event_rules>Analytics Event Rules</event_rules>
+<trigger_source>Source</trigger_source>
+<rule_condition>Trigger</rule_condition>
+<!-- End of Addition -->
+</lang>
+<lang>
+<add>Add</add>
+<cancel>Cancel</cancel>
+<change_direction>Change direction</change_direction>
+<close>Close</close>
+<configurations>Configurations</configurations>
+<counting_report>Counting report</counting_report>
+<csv>csv</csv>
+<date>Date</date>
+<day>Day</day>
+<today>Today</today>
+<delete>Delete</delete>
+<direction>Direction</direction>
+<export_data>Export data</export_data>
+<option_localtime_utc>UTC time</option_localtime_utc>
+<option_localtime_local>Camera local</option_localtime_local>
+<enable_visual_confirmation>Visual confirmation of object</enable_visual_confirmation>
+<enable_periodic_alarm>Enable periodic alarm</enable_periodic_alarm>
+<event_list>Event List</event_list>
+<exceed_field_point_num>Exceed the maximum number of points: 20</exceed_field_point_num>
+<database_preparing_please_try_later>Database is preparing. Please try again later.</database_preparing_please_try_later>
+<format>Format</format>
+<from>From</from>
+<hour>Hour</hour>
+<in>In</in>
+<interval>Interval</interval>
+<invalid_roi>Invalid ROI</invalid_roi>
+<iva_analytics>Analytics</iva_analytics>
+<iva_eventdb>Event</iva_eventdb>
+<iva_report>Report</iva_report>
+<iva_rule_name>Rule name</iva_rule_name>
+<iva_rule_type>Rule type</iva_rule_type>
+<iva_rules>Rules</iva_rules>
+<iva_statistic>Statistic</iva_statistic>
+<iva_statistic_describe_objcount>Statistics</iva_statistic_describe_objcount>
+<iva_system>IVA System</iva_system>
+<json>json</json>
+<maximum_object_size>Maximum object size</maximum_object_size>
+<min15>15 minutes</min15>
+<minimum_object_size>Minimum object size</minimum_object_size>
+<min_obj_size_larger_than_max_obj_size>Minimize object size can't be larger than Maximize object size</min_obj_size_larger_than_max_obj_size>
+<minute>Minute</minute>
+<name>Name</name>
+<out>Out</out>
+<roi>Detection area</roi>
+<remove>Remove</remove>
+<report>Report</report>
+<report_time>Report time</report_time>
+<reset_time_interval>Reset every</reset_time_interval>
+<report_time_interval>Report  interval</report_time_interval>
+<save>Save</save>
+<search>Search</search>
+<search_result>Search result</search_result>
+<seconds>Seconds</seconds>
+<sensitivity>Sensitivity</sensitivity>
+<stop_search>Stop search</stop_search>
+<time>Time</time>
+<to>To</to>
+<toggle>Toggle</toggle>
+<type>Type</type>
+<username>Username</username>
+<setting>Setting</setting>
+<password>Password</password>
+<last_time>Last time</last_time>
+<line_ref>Reference line</line_ref>
+<ss_map_label>Start-Stop map</ss_map_label>
+<ss_map_unit>pairs</ss_map_unit>
+<empty_data>Empty data, no people have been detected yet.</empty_data>
+<internal_error>Get Start-Stop Map pairs failed due to internal error.</internal_error>	
+<loiter_alarm_interval>Alarm interval</loiter_alarm_interval>
+<loitering_duration>Loitering duration</loitering_duration>
+<xml>xml</xml>
+<!-- Penlin addition when 2015/10/12 for event_push page -->
+	<!-- event_push.html required -->
+<Servers>Servers</Servers>
+<status>status</status>
+<server_name>Name</server_name>
+<server_protocol>Protocol</server_protocol>
+<address_location>Address</address_location>
+<report_aggregation>Aggregation Level</report_aggregation>
+<report_schedule>Delivery Schedule</report_schedule>
+<report_schedule_note>schedule time must be loner than or equal with aggregation level</report_schedule_note>
+<report_format>Foramt</report_format>
+<report_lite>Lite</report_lite>
+<report_lite_note>lite mode would ignore date with all zero in/out.</report_lite_note>
+<report_localtime>localtime</report_localtime>
+<report_localtime_note>Represent StartTime, EndTime in camera local time zone with ISO8601 format. Or defaultly in UTC time. </report_localtime_note>
+<ServerConfigurations>Configurations</ServerConfigurations>
+<server_address>Server address</server_address>
+<user_name>Username</user_name>
+<!--password></password-->
+<server_port>Port</server_port>
+<email>Email</email>
+<sender_email_address>Sender email</sender_email_address>
+<recipient_email_address>Recipient email</recipient_email_address>
+<ftp>FTP</ftp>
+<remote_folder_name>FTP folder name</remote_folder_name>
+<reportname_format>Filename format</reportname_format>
+<filename_format_note>support customize report filename format: [default: report_%T.%F] &lt;br&gt;%T: report timestamp;  %M: Mac address;  %D: DeviceID;  %G: GroupID&lt;br&gt;%S: Schedule time in second;  %A: Aggregation level in second&lt;br&gt;%N: Server name;  %F: report format;  %L: LITE or empty</filename_format_note>
+<http>HTTP</http>
+<url>Server address</url>
+<server_uri>Server uri</server_uri>
+
+<test>Test</test>
+<!--close></close-->
+<!--save></save-->
+	<!-- livereport.html required -->
+<enabled_di_task_to_switch_counting_feature>Enable Digital Input (DI) to switch Counting On/Off</enabled_di_task_to_switch_counting_feature>
+<minimum_signal_interval>Mininum DI signal detection interval : </minimum_signal_interval>
+<starttime>StartTime</starttime>
+<endtime>EndTime  </endtime>
+<now>Now</now>
+<counting_data_pull>Pull Event</counting_data_pull>
+<send>Send</send>
+<get_cgi>CGI</get_cgi>
+<localtime>local time</localtime>
+<invalid_starttime_format>You have used an invalid format for StartTime!</invalid_starttime_format>
+<invalid_endtime_format>You have used an invalid format for EndTime</invalid_endtime_format>
+	<!-- common.js required -->
+<you_have_used_invalid_characters_lg>You have used invalid characters. These invalid characters are: \, /, :, *, ., ?, &quot;, ', &lt;, &gt;, &amp;, |</you_have_used_invalid_characters_lg>
+<you_have_used_invalid_characters_sh>You have used invalid characters. These invalid characters are: &quot;, ', &lt;, &gt;, &amp;</you_have_used_invalid_characters_sh>
+<you_have_used_invalid_characters_host>You have used invalid characters. These invalid characters are: &quot;, ', &lt;, &gt;, =, &amp;</you_have_used_invalid_characters_host>
+<field_cannot_be_empty>This field cannot be empty</field_cannot_be_empty>
+<space_is_invalid>Do not type a space key in the field.</space_is_invalid>
+<accessname_can_only_contains_numeric_alpha>Only numeric and alphabetical characters are allowed for access name.</accessname_can_only_contains_numeric_alpha>
+<please_input_a_valid_email_address>Please input a valid email address.</please_input_a_valid_email_address>
+<please_input_a_valid_value>Please input a valid value.</please_input_a_valid_value>
+<please_input_a_value_between_0_and_255>Please input a value between 0 and 255</please_input_a_value_between_0_and_255>
+<please_enter_a_valid_ip_address>Please enter a valid IP address.</please_enter_a_valid_ip_address>
+
+	<!-- event_push.js required -->
+<you_have_used_invalid_characters_servername>You have used invalid characters. These invalid characters are: \, /, :, *, ?, &quot;, ', &lt;, &gt;, &amp;, |, %</you_have_used_invalid_characters_servername>
+<you_have_used_invalid_characters_folder>You have used invalid characters. These invalid characters are:  /, :, *,?, &quot;, ', &lt;, &gt;, &amp;, |</you_have_used_invalid_characters_folder>
+<you_have_used_invalid_characters_foldername>You have used invalid characters. These invalid characters are: :, *, ?, &quot;, ', &lt;, &gt;, &amp;, |,  (space)</you_have_used_invalid_characters_foldername>
+<you_have_used_invalid_characters_fileformat>You have used invalid characters. These invalid characters are: \, /, :, *, ?, &quot;, ', &lt;, &gt;, &amp;, |</you_have_used_invalid_characters_fileformat>
+<your_have_used_name_with_too_long_or_short_length>You have input a name in too long or too short length!</your_have_used_name_with_too_long_or_short_length>
+<you_have_used_fileformat_without_time_variable_T>Warning! You have used a filename without time variable %T. This might cause your reports be overridden!</you_have_used_fileformat_without_time_variable_T>
+<invalid_protocol>Please Choose a valid Protocol!</invalid_protocol>
+<invalid_schedule_time>schedule time must be larger than aggregation level!</invalid_schedule_time>
+<!-- End of Addition -->
+<!-- Penlin addition when 2015/11/03 for event_setting page -->
+<event_name>Event name</event_name>
+<enable_this_event>Enable this event</enable_this_event>
+<enable_this_recording>Enable this recording</enable_this_recording>
+<enable_this_trigger>Enable this trigger</enable_this_trigger>
+<priority>Priority</priority>
+<high>High</high>
+<normal>Normal</normal>
+<low>Low</low>
+<delay_for>Detect next event trigger after</delay_for>
+<seconds>seconds</seconds>
+<seconds_before_detecting_next_event>second(s).</seconds_before_detecting_next_event>
+<seconds_before_recording> seconds before recording</seconds_before_recording>
+<schedule>Schedule</schedule>
+<trigger>Trigger</trigger>
+<trigger_D_O_1_for>Trigger digital output 1 for</trigger_D_O_1_for>
+<trigger_D_O_2_for>Trigger digital output 2 for</trigger_D_O_2_for>
+<trigger_D_O_for>Trigger digital output for</trigger_D_O_for>
+<trigger_duration>Trigger duration</trigger_duration>
+<trigger_event_when_detected_audio>Trigger event when detected audio</trigger_event_when_detected_audio>
+<trigger_every>Trigger every other</trigger_every>
+<trigger_name>Trigger name</trigger_name>
+<trigger_settings>Trigger Settings</trigger_settings>
+<trigger_time>Trigger time</trigger_time>
+<trigger_type>Trigger type</trigger_type>
+<triggered>Triggered</triggered>
+<action>Action</action>
+<event_schedule>Event schedule</event_schedule>
+<event_server>event server</event_server>
+<event_settings>Event settings</event_settings>
+<event_condition>Event trigger</event_condition>
+<event_media>event media</event_media>
+<sun>Sun</sun>
+<mon>Mon</mon>
+<tue>Tue</tue>
+<wed>Wed</wed>
+<thu>Thu</thu>
+<fri>Fri</fri>
+<sat>Sat</sat>
+<time>Time</time>
+<always>Always</always>
+<from>From</from>
+<to>to</to>
+<video_motion_detection>Video motion detection</video_motion_detection>
+<profile>Profile</profile>
+<note_please_configure>Note: Please configure</note_please_configure>
+<motion_detection>Motion detection</motion_detection>
+<first>first</first>
+<periodic>Periodically</periodic>
+<trigger_every>Trigger every other</trigger_every>
+<minutes>minute(s)</minutes>
+<digital_input>Digital input</digital_input>
+<system_boot>System boot</system_boot>
+<recording_notify>Recording notify</recording_notify>
+<audio_detection>Audio detection</audio_detection>
+<rises_above>rises above</rises_above>
+<falls_below>falls below</falls_below>
+<alarm_level>alarm level</alarm_level>
+<camera_tampering_detection>Camera tampering detection</camera_tampering_detection>
+<check_sd_card>Please check SD card if already prepared or suggest formatting again</check_sd_card>
+<tampering>Tampering detection</tampering>
+<too_blurry>Too blurry</too_blurry>
+<too_bright>Too bright</too_bright>
+<too_dark>Too dark</too_dark>
+<active>Active</active>
+<active_to_normal>Active to Normal</active_to_normal>
+<normal_to_active>Normal to Active</normal_to_active>
+<the_name_has_already_existed>This name is already registered. Please try another name or delete the old one.</the_name_has_already_existed>
+<the_name_has_already_existed_please_try_another_name_or_delete_the_old_one>This name is already registered. Please try another name or delete the old one.</the_name_has_already_existed_please_try_another_name_or_delete_the_old_one>
+<the_pw_should_contain_at_least_8_chars>The password should contain at least 8 characters.</the_pw_should_contain_at_least_8_chars>
+<no_more_list_for_audioclip_to_enter>Could not add a new audio clip because the maximum number of audio clips is 20.</no_more_list_for_audioclip_to_enter>
+<no_more_list_for_event_to_enter>Could not add a new event setting because the maximum number of event settings is 3.</no_more_list_for_event_to_enter>
+<no_more_list_for_media_to_enter>Could not add a new media setting because the maximum number of media settings is 5.</no_more_list_for_media_to_enter>
+<no_more_list_for_recording_to_enter>Could not add a new recording setting because the maximum number of recordings is 2.</no_more_list_for_recording_to_enter>
+<no_more_list_for_server_to_enter>Could not add a new server setting because the maximum number of server settings is 5.</no_more_list_for_server_to_enter>
+<no_more_list_to_enter>Could not add a new list because the maximum number of lists is 10</no_more_list_to_enter>
+<note_please_configure>Note: Please configure</note_please_configure>
+<manual_trigger>Manual triggers</manual_trigger>
+<backup_media_while_network_loss>Backup media if the network is disconnected</backup_media_while_network_loss>
+<puremedia>Media</puremedia>
+<pureserver>Server</pureserver>
+<extra_parameter>Extra parameter</extra_parameter>
+<sd>SD</sd>
+<sd_test>SD test</sd_test>
+<view>View</view>
+<create_folders_by_date_time_and_hour_automatically>Create folders by date time and hour automatically</create_folders_by_date_time_and_hour_automatically>
+<add_server>Add server</add_server>
+<add_media>Add media</add_media>
+<save_event>Save event</save_event>
+<save_server>Save server</save_server>
+<save_media>Save media</save_media>
+<event>Event</event>
+<server>Server</server>
+<media>Media</media>
+<passive_mode>Passive mode</passive_mode>
+<server_type>Server type</server_type>
+<this_server_requires_a_secure_connection_ssl>This server requires a secure connection (SSL)</this_server_requires_a_secure_connection_ssl>
+<network_storage>Network storage</network_storage>
+<network_storage_location>Network storage location</network_storage_location>
+<_for_example_my_nas_disk_folder_>(For example: \\my_nas\disk\folder)</_for_example_my_nas_disk_folder_>
+<workgroup>Workgroup</workgroup>
+<media_freespace>Available memory space</media_freespace>
+<media_name>Media name</media_name>
+<media_option>Media Option</media_option>
+<media_options>Media Options</media_options>
+<media_settings>Media settings</media_settings>
+<media_size_is_over_free_space>Exceed maximum memory space.</media_size_is_over_free_space>
+<media_type>Media type</media_type>
+<attached_media>Attached media:</attached_media>
+<video_clip>Video clip</video_clip>
+<system_log>System log</system_log>
+<pre_event_image_s>pre-event image(s)</pre_event_image_s>
+<post_event_image_s>post-event image(s)</post_event_image_s>
+<pre_event_recording>Pre-event recording</pre_event_recording>
+<pre_event_recording_seconds_warnming_message>Pre-event recording seconds can not be larger than maximum duration.</pre_event_recording_seconds_warnming_message>
+<pre_event_seconds_can_not_be_larger_than_max_duration>Pre-event recording seconds can not be larger than maximum duration.</pre_event_seconds_can_not_be_larger_than_max_duration>
+<source>Source</source>
+<maximum_duration>Maximum duration</maximum_duration>
+<maximum_file_size>Maximum file size</maximum_file_size>
+<file_name_prefix>File name prefix</file_name_prefix>
+<add_date_and_time_suffix_to_file_name>Add date and time suffix to file name</add_date_and_time_suffix_to_file_name>
+<toRight>&gt;&gt;</toRight>
+<toLeft>&lt;&lt;</toLeft>
+<available_vadp_triggers>Available VADP triggers pool</available_vadp_triggers>
+<enabled_vadp_tirggers>Enabled Triggers for Event</enabled_vadp_tirggers>
+<person>people</person>
+<event_rules>Analytics Event Rules</event_rules>
+<trigger_source>Source</trigger_source>
+<rule_condition>Trigger</rule_condition>
+<!-- End of Addition -->
+</lang>
+<lang>
+<add>Add</add>
+<cancel>Cancel</cancel>
+<change_direction>Change direction</change_direction>
+<close>Close</close>
+<configurations>Configurations</configurations>
+<counting_report>Counting report</counting_report>
+<csv>csv</csv>
+<date>Date</date>
+<day>Day</day>
+<today>Today</today>
+<delete>Delete</delete>
+<direction>Direction</direction>
+<export_data>Export data</export_data>
+<option_localtime_utc>UTC time</option_localtime_utc>
+<option_localtime_local>Camera local</option_localtime_local>
+<enable_visual_confirmation>Visual confirmation of object</enable_visual_confirmation>
+<enable_periodic_alarm>Enable periodic alarm</enable_periodic_alarm>
+<event_list>Event List</event_list>
+<exceed_field_point_num>Exceed the maximum number of points: 20</exceed_field_point_num>
+<database_preparing_please_try_later>Database is preparing. Please try again later.</database_preparing_please_try_later>
+<format>Format</format>
+<from>From</from>
+<hour>Hour</hour>
+<in>In</in>
+<interval>Interval</interval>
+<invalid_roi>Invalid ROI</invalid_roi>
+<iva_analytics>Analytics</iva_analytics>
+<iva_eventdb>Event</iva_eventdb>
+<iva_report>Report</iva_report>
+<iva_rule_name>Rule name</iva_rule_name>
+<iva_rule_type>Rule type</iva_rule_type>
+<iva_rules>Rules</iva_rules>
+<iva_statistic>Statistic</iva_statistic>
+<iva_statistic_describe_objcount>Statistics</iva_statistic_describe_objcount>
+<iva_system>IVA System</iva_system>
+<json>json</json>
+<maximum_object_size>Maximum object size</maximum_object_size>
+<min15>15 minutes</min15>
+<minimum_object_size>Minimum object size</minimum_object_size>
+<min_obj_size_larger_than_max_obj_size>Minimize object size can't be larger than Maximize object size</min_obj_size_larger_than_max_obj_size>
+<minute>Minute</minute>
+<name>Name</name>
+<out>Out</out>
+<roi>Detection area</roi>
+<remove>Remove</remove>
+<report>Report</report>
+<report_time>Report time</report_time>
+<reset_time_interval>Reset every</reset_time_interval>
+<report_time_interval>Report  interval</report_time_interval>
+<save>Save</save>
+<search>Search</search>
+<search_result>Search result</search_result>
+<seconds>Seconds</seconds>
+<sensitivity>Sensitivity</sensitivity>
+<stop_search>Stop search</stop_search>
+<time>Time</time>
+<to>To</to>
+<toggle>Toggle</toggle>
+<type>Type</type>
+<username>Username</username>
+<setting>Setting</setting>
+<password>Password</password>
+<last_time>Last time</last_time>
+<line_ref>Reference line</line_ref>
+<ss_map_label>Start-Stop map</ss_map_label>
+<ss_map_unit>pairs</ss_map_unit>
+<empty_data>Empty data, no people have been detected yet.</empty_data>
+<internal_error>Get Start-Stop Map pairs failed due to internal error.</internal_error>	
+<loiter_alarm_interval>Alarm interval</loiter_alarm_interval>
+<loitering_duration>Loitering duration</loitering_duration>
+<xml>xml</xml>
+<!-- Penlin addition when 2015/10/12 for event_push page -->
+	<!-- event_push.html required -->
+<Servers>Servers</Servers>
+<status>status</status>
+<server_name>Name</server_name>
+<server_protocol>Protocol</server_protocol>
+<address_location>Address</address_location>
+<report_aggregation>Aggregation Level</report_aggregation>
+<report_schedule>Delivery Schedule</report_schedule>
+<report_schedule_note>schedule time must be loner than or equal with aggregation level</report_schedule_note>
+<report_format>Foramt</report_format>
+<report_lite>Lite</report_lite>
+<report_lite_note>lite mode would ignore date with all zero in/out.</report_lite_note>
+<report_localtime>localtime</report_localtime>
+<report_localtime_note>Represent StartTime, EndTime in camera local time zone with ISO8601 format. Or defaultly in UTC time. </report_localtime_note>
+<ServerConfigurations>Configurations</ServerConfigurations>
+<server_address>Server address</server_address>
+<user_name>Username</user_name>
+<!--password></password-->
+<server_port>Port</server_port>
+<email>Email</email>
+<sender_email_address>Sender email</sender_email_address>
+<recipient_email_address>Recipient email</recipient_email_address>
+<ftp>FTP</ftp>
+<remote_folder_name>FTP folder name</remote_folder_name>
+<reportname_format>Filename format</reportname_format>
+<filename_format_note>support customize report filename format: [default: report_%T.%F] &lt;br&gt;%T: report timestamp;  %M: Mac address;  %D: DeviceID;  %G: GroupID&lt;br&gt;%S: Schedule time in second;  %A: Aggregation level in second&lt;br&gt;%N: Server name;  %F: report format;  %L: LITE or empty</filename_format_note>
+<http>HTTP</http>
+<url>Server address</url>
+<server_uri>Server uri</server_uri>
+
+<test>Test</test>
+<!--close></close-->
+<!--save></save-->
+	<!-- livereport.html required -->
+<enabled_di_task_to_switch_counting_feature>Enable Digital Input (DI) to switch Counting On/Off</enabled_di_task_to_switch_counting_feature>
+<minimum_signal_interval>Mininum DI signal detection interval : </minimum_signal_interval>
+<starttime>StartTime</starttime>
+<endtime>EndTime  </endtime>
+<now>Now</now>
+<counting_data_pull>Pull Event</counting_data_pull>
+<send>Send</send>
+<get_cgi>CGI</get_cgi>
+<localtime>local time</localtime>
+<invalid_starttime_format>You have used an invalid format for StartTime!</invalid_starttime_format>
+<invalid_endtime_format>You have used an invalid format for EndTime</invalid_endtime_format>
+	<!-- common.js required -->
+<you_have_used_invalid_characters_lg>You have used invalid characters. These invalid characters are: \, /, :, *, ., ?, &quot;, ', &lt;, &gt;, &amp;, |</you_have_used_invalid_characters_lg>
+<you_have_used_invalid_characters_sh>You have used invalid characters. These invalid characters are: &quot;, ', &lt;, &gt;, &amp;</you_have_used_invalid_characters_sh>
+<you_have_used_invalid_characters_host>You have used invalid characters. These invalid characters are: &quot;, ', &lt;, &gt;, =, &amp;</you_have_used_invalid_characters_host>
+<field_cannot_be_empty>This field cannot be empty</field_cannot_be_empty>
+<space_is_invalid>Do not type a space key in the field.</space_is_invalid>
+<accessname_can_only_contains_numeric_alpha>Only numeric and alphabetical characters are allowed for access name.</accessname_can_only_contains_numeric_alpha>
+<please_input_a_valid_email_address>Please input a valid email address.</please_input_a_valid_email_address>
+<please_input_a_valid_value>Please input a valid value.</please_input_a_valid_value>
+<please_input_a_value_between_0_and_255>Please input a value between 0 and 255</please_input_a_value_between_0_and_255>
+<please_enter_a_valid_ip_address>Please enter a valid IP address.</please_enter_a_valid_ip_address>
+
+	<!-- event_push.js required -->
+<you_have_used_invalid_characters_servername>You have used invalid characters. These invalid characters are: \, /, :, *, ?, &quot;, ', &lt;, &gt;, &amp;, |, %</you_have_used_invalid_characters_servername>
+<you_have_used_invalid_characters_folder>You have used invalid characters. These invalid characters are:  /, :, *,?, &quot;, ', &lt;, &gt;, &amp;, |</you_have_used_invalid_characters_folder>
+<you_have_used_invalid_characters_foldername>You have used invalid characters. These invalid characters are: :, *, ?, &quot;, ', &lt;, &gt;, &amp;, |,  (space)</you_have_used_invalid_characters_foldername>
+<you_have_used_invalid_characters_fileformat>You have used invalid characters. These invalid characters are: \, /, :, *, ?, &quot;, ', &lt;, &gt;, &amp;, |</you_have_used_invalid_characters_fileformat>
+<your_have_used_name_with_too_long_or_short_length>You have input a name in too long or too short length!</your_have_used_name_with_too_long_or_short_length>
+<you_have_used_fileformat_without_time_variable_T>Warning! You have used a filename without time variable %T. This might cause your reports be overridden!</you_have_used_fileformat_without_time_variable_T>
+<invalid_protocol>Please Choose a valid Protocol!</invalid_protocol>
+<invalid_schedule_time>schedule time must be larger than aggregation level!</invalid_schedule_time>
+<!-- End of Addition -->
+<!-- Penlin addition when 2015/11/03 for event_setting page -->
+<event_name>Event name</event_name>
+<enable_this_event>Enable this event</enable_this_event>
+<enable_this_recording>Enable this recording</enable_this_recording>
+<enable_this_trigger>Enable this trigger</enable_this_trigger>
+<priority>Priority</priority>
+<high>High</high>
+<normal>Normal</normal>
+<low>Low</low>
+<delay_for>Detect next event trigger after</delay_for>
+<seconds>seconds</seconds>
+<seconds_before_detecting_next_event>second(s).</seconds_before_detecting_next_event>
+<seconds_before_recording> seconds before recording</seconds_before_recording>
+<schedule>Schedule</schedule>
+<trigger>Trigger</trigger>
+<trigger_D_O_1_for>Trigger digital output 1 for</trigger_D_O_1_for>
+<trigger_D_O_2_for>Trigger digital output 2 for</trigger_D_O_2_for>
+<trigger_D_O_for>Trigger digital output for</trigger_D_O_for>
+<trigger_duration>Trigger duration</trigger_duration>
+<trigger_event_when_detected_audio>Trigger event when detected audio</trigger_event_when_detected_audio>
+<trigger_every>Trigger every other</trigger_every>
+<trigger_name>Trigger name</trigger_name>
+<trigger_settings>Trigger Settings</trigger_settings>
+<trigger_time>Trigger time</trigger_time>
+<trigger_type>Trigger type</trigger_type>
+<triggered>Triggered</triggered>
+<action>Action</action>
+<event_schedule>Event schedule</event_schedule>
+<event_server>event server</event_server>
+<event_settings>Event settings</event_settings>
+<event_condition>Event trigger</event_condition>
+<event_media>event media</event_media>
+<sun>Sun</sun>
+<mon>Mon</mon>
+<tue>Tue</tue>
+<wed>Wed</wed>
+<thu>Thu</thu>
+<fri>Fri</fri>
+<sat>Sat</sat>
+<time>Time</time>
+<always>Always</always>
+<from>From</from>
+<to>to</to>
+<video_motion_detection>Video motion detection</video_motion_detection>
+<profile>Profile</profile>
+<note_please_configure>Note: Please configure</note_please_configure>
+<motion_detection>Motion detection</motion_detection>
+<first>first</first>
+<periodic>Periodically</periodic>
+<trigger_every>Trigger every other</trigger_every>
+<minutes>minute(s)</minutes>
+<digital_input>Digital input</digital_input>
+<system_boot>System boot</system_boot>
+<recording_notify>Recording notify</recording_notify>
+<audio_detection>Audio detection</audio_detection>
+<rises_above>rises above</rises_above>
+<falls_below>falls below</falls_below>
+<alarm_level>alarm level</alarm_level>
+<camera_tampering_detection>Camera tampering detection</camera_tampering_detection>
+<check_sd_card>Please check SD card if already prepared or suggest formatting again</check_sd_card>
+<tampering>Tampering detection</tampering>
+<too_blurry>Too blurry</too_blurry>
+<too_bright>Too bright</too_bright>
+<too_dark>Too dark</too_dark>
+<active>Active</active>
+<active_to_normal>Active to Normal</active_to_normal>
+<normal_to_active>Normal to Active</normal_to_active>
+<the_name_has_already_existed>This name is already registered. Please try another name or delete the old one.</the_name_has_already_existed>
+<the_name_has_already_existed_please_try_another_name_or_delete_the_old_one>This name is already registered. Please try another name or delete the old one.</the_name_has_already_existed_please_try_another_name_or_delete_the_old_one>
+<the_pw_should_contain_at_least_8_chars>The password should contain at least 8 characters.</the_pw_should_contain_at_least_8_chars>
+<no_more_list_for_audioclip_to_enter>Could not add a new audio clip because the maximum number of audio clips is 20.</no_more_list_for_audioclip_to_enter>
+<no_more_list_for_event_to_enter>Could not add a new event setting because the maximum number of event settings is 3.</no_more_list_for_event_to_enter>
+<no_more_list_for_media_to_enter>Could not add a new media setting because the maximum number of media settings is 5.</no_more_list_for_media_to_enter>
+<no_more_list_for_recording_to_enter>Could not add a new recording setting because the maximum number of recordings is 2.</no_more_list_for_recording_to_enter>
+<no_more_list_for_server_to_enter>Could not add a new server setting because the maximum number of server settings is 5.</no_more_list_for_server_to_enter>
+<no_more_list_to_enter>Could not add a new list because the maximum number of lists is 10</no_more_list_to_enter>
+<note_please_configure>Note: Please configure</note_please_configure>
+<manual_trigger>Manual triggers</manual_trigger>
+<backup_media_while_network_loss>Backup media if the network is disconnected</backup_media_while_network_loss>
+<puremedia>Media</puremedia>
+<pureserver>Server</pureserver>
+<extra_parameter>Extra parameter</extra_parameter>
+<sd>SD</sd>
+<sd_test>SD test</sd_test>
+<view>View</view>
+<create_folders_by_date_time_and_hour_automatically>Create folders by date time and hour automatically</create_folders_by_date_time_and_hour_automatically>
+<add_server>Add server</add_server>
+<add_media>Add media</add_media>
+<save_event>Save event</save_event>
+<save_server>Save server</save_server>
+<save_media>Save media</save_media>
+<event>Event</event>
+<server>Server</server>
+<media>Media</media>
+<passive_mode>Passive mode</passive_mode>
+<server_type>Server type</server_type>
+<this_server_requires_a_secure_connection_ssl>This server requires a secure connection (SSL)</this_server_requires_a_secure_connection_ssl>
+<network_storage>Network storage</network_storage>
+<network_storage_location>Network storage location</network_storage_location>
+<_for_example_my_nas_disk_folder_>(For example: \\my_nas\disk\folder)</_for_example_my_nas_disk_folder_>
+<workgroup>Workgroup</workgroup>
+<media_freespace>Available memory space</media_freespace>
+<media_name>Media name</media_name>
+<media_option>Media Option</media_option>
+<media_options>Media Options</media_options>
+<media_settings>Media settings</media_settings>
+<media_size_is_over_free_space>Exceed maximum memory space.</media_size_is_over_free_space>
+<media_type>Media type</media_type>
+<attached_media>Attached media:</attached_media>
+<video_clip>Video clip</video_clip>
+<system_log>System log</system_log>
+<pre_event_image_s>pre-event image(s)</pre_event_image_s>
+<post_event_image_s>post-event image(s)</post_event_image_s>
+<pre_event_recording>Pre-event recording</pre_event_recording>
+<pre_event_recording_seconds_warnming_message>Pre-event recording seconds can not be larger than maximum duration.</pre_event_recording_seconds_warnming_message>
+<pre_event_seconds_can_not_be_larger_than_max_duration>Pre-event recording seconds can not be larger than maximum duration.</pre_event_seconds_can_not_be_larger_than_max_duration>
+<source>Source</source>
+<maximum_duration>Maximum duration</maximum_duration>
+<maximum_file_size>Maximum file size</maximum_file_size>
+<file_name_prefix>File name prefix</file_name_prefix>
+<add_date_and_time_suffix_to_file_name>Add date and time suffix to file name</add_date_and_time_suffix_to_file_name>
+<toRight>&gt;&gt;</toRight>
+<toLeft>&lt;&lt;</toLeft>
+<available_vadp_triggers>Available VADP triggers pool</available_vadp_triggers>
+<enabled_vadp_tirggers>Enabled Triggers for Event</enabled_vadp_tirggers>
+<person>people</person>
+<event_rules>Analytics Event Rules</event_rules>
+<trigger_source>Source</trigger_source>
+<rule_condition>Trigger</rule_condition>
+<!-- End of Addition -->
+</lang>
+<lang>
+<add>Add</add>
+<cancel>Cancel</cancel>
+<change_direction>Change direction</change_direction>
+<close>Close</close>
+<configurations>Configurations</configurations>
+<counting_report>Counting report</counting_report>
+<csv>csv</csv>
+<date>Date</date>
+<day>Day</day>
+<today>Today</today>
+<delete>Delete</delete>
+<direction>Direction</direction>
+<export_data>Export data</export_data>
+<option_localtime_utc>UTC time</option_localtime_utc>
+<option_localtime_local>Camera local</option_localtime_local>
+<enable_visual_confirmation>Visual confirmation of object</enable_visual_confirmation>
+<enable_periodic_alarm>Enable periodic alarm</enable_periodic_alarm>
+<event_list>Event List</event_list>
+<exceed_field_point_num>Exceed the maximum number of points: 20</exceed_field_point_num>
+<database_preparing_please_try_later>Database is preparing. Please try again later.</database_preparing_please_try_later>
+<format>Format</format>
+<from>From</from>
+<hour>Hour</hour>
+<in>In</in>
+<interval>Interval</interval>
+<invalid_roi>Invalid ROI</invalid_roi>
+<iva_analytics>Analytics</iva_analytics>
+<iva_eventdb>Event</iva_eventdb>
+<iva_report>Report</iva_report>
+<iva_rule_name>Rule name</iva_rule_name>
+<iva_rule_type>Rule type</iva_rule_type>
+<iva_rules>Rules</iva_rules>
+<iva_statistic>Statistic</iva_statistic>
+<iva_statistic_describe_objcount>Statistics</iva_statistic_describe_objcount>
+<iva_system>IVA System</iva_system>
+<json>json</json>
+<maximum_object_size>Maximum object size</maximum_object_size>
+<min15>15 minutes</min15>
+<minimum_object_size>Minimum object size</minimum_object_size>
+<min_obj_size_larger_than_max_obj_size>Minimize object size can't be larger than Maximize object size</min_obj_size_larger_than_max_obj_size>
+<minute>Minute</minute>
+<name>Name</name>
+<out>Out</out>
+<roi>Detection area</roi>
+<remove>Remove</remove>
+<report>Report</report>
+<report_time>Report time</report_time>
+<reset_time_interval>Reset every</reset_time_interval>
+<report_time_interval>Report  interval</report_time_interval>
+<save>Save</save>
+<search>Search</search>
+<search_result>Search result</search_result>
+<seconds>Seconds</seconds>
+<sensitivity>Sensitivity</sensitivity>
+<stop_search>Stop search</stop_search>
+<time>Time</time>
+<to>To</to>
+<toggle>Toggle</toggle>
+<type>Type</type>
+<username>Username</username>
+<setting>Setting</setting>
+<password>Password</password>
+<last_time>Last time</last_time>
+<line_ref>Reference line</line_ref>
+<ss_map_label>Start-Stop map</ss_map_label>
+<ss_map_unit>pairs</ss_map_unit>
+<empty_data>Empty data, no people have been detected yet.</empty_data>
+<internal_error>Get Start-Stop Map pairs failed due to internal error.</internal_error>	
+<loiter_alarm_interval>Alarm interval</loiter_alarm_interval>
+<loitering_duration>Loitering duration</loitering_duration>
+<xml>xml</xml>
+<!-- Penlin addition when 2015/10/12 for event_push page -->
+	<!-- event_push.html required -->
+<Servers>Servers</Servers>
+<status>status</status>
+<server_name>Name</server_name>
+<server_protocol>Protocol</server_protocol>
+<address_location>Address</address_location>
+<report_aggregation>Aggregation Level</report_aggregation>
+<report_schedule>Delivery Schedule</report_schedule>
+<report_schedule_note>schedule time must be loner than or equal with aggregation level</report_schedule_note>
+<report_format>Foramt</report_format>
+<report_lite>Lite</report_lite>
+<report_lite_note>lite mode would ignore date with all zero in/out.</report_lite_note>
+<report_localtime>localtime</report_localtime>
+<report_localtime_note>Represent StartTime, EndTime in camera local time zone with ISO8601 format. Or defaultly in UTC time. </report_localtime_note>
+<ServerConfigurations>Configurations</ServerConfigurations>
+<server_address>Server address</server_address>
+<user_name>Username</user_name>
+<!--password></password-->
+<server_port>Port</server_port>
+<email>Email</email>
+<sender_email_address>Sender email</sender_email_address>
+<recipient_email_address>Recipient email</recipient_email_address>
+<ftp>FTP</ftp>
+<remote_folder_name>FTP folder name</remote_folder_name>
+<reportname_format>Filename format</reportname_format>
+<filename_format_note>support customize report filename format: [default: report_%T.%F] &lt;br&gt;%T: report timestamp;  %M: Mac address;  %D: DeviceID;  %G: GroupID&lt;br&gt;%S: Schedule time in second;  %A: Aggregation level in second&lt;br&gt;%N: Server name;  %F: report format;  %L: LITE or empty</filename_format_note>
+<http>HTTP</http>
+<url>Server address</url>
+<server_uri>Server uri</server_uri>
+
+<test>Test</test>
+<!--close></close-->
+<!--save></save-->
+	<!-- livereport.html required -->
+<enabled_di_task_to_switch_counting_feature>Enable Digital Input (DI) to switch Counting On/Off</enabled_di_task_to_switch_counting_feature>
+<minimum_signal_interval>Mininum DI signal detection interval : </minimum_signal_interval>
+<starttime>StartTime</starttime>
+<endtime>EndTime  </endtime>
+<now>Now</now>
+<counting_data_pull>Pull Event</counting_data_pull>
+<send>Send</send>
+<get_cgi>CGI</get_cgi>
+<localtime>local time</localtime>
+<invalid_starttime_format>You have used an invalid format for StartTime!</invalid_starttime_format>
+<invalid_endtime_format>You have used an invalid format for EndTime</invalid_endtime_format>
+	<!-- common.js required -->
+<you_have_used_invalid_characters_lg>You have used invalid characters. These invalid characters are: \, /, :, *, ., ?, &quot;, ', &lt;, &gt;, &amp;, |</you_have_used_invalid_characters_lg>
+<you_have_used_invalid_characters_sh>You have used invalid characters. These invalid characters are: &quot;, ', &lt;, &gt;, &amp;</you_have_used_invalid_characters_sh>
+<you_have_used_invalid_characters_host>You have used invalid characters. These invalid characters are: &quot;, ', &lt;, &gt;, =, &amp;</you_have_used_invalid_characters_host>
+<field_cannot_be_empty>This field cannot be empty</field_cannot_be_empty>
+<space_is_invalid>Do not type a space key in the field.</space_is_invalid>
+<accessname_can_only_contains_numeric_alpha>Only numeric and alphabetical characters are allowed for access name.</accessname_can_only_contains_numeric_alpha>
+<please_input_a_valid_email_address>Please input a valid email address.</please_input_a_valid_email_address>
+<please_input_a_valid_value>Please input a valid value.</please_input_a_valid_value>
+<please_input_a_value_between_0_and_255>Please input a value between 0 and 255</please_input_a_value_between_0_and_255>
+<please_enter_a_valid_ip_address>Please enter a valid IP address.</please_enter_a_valid_ip_address>
+
+	<!-- event_push.js required -->
+<you_have_used_invalid_characters_servername>You have used invalid characters. These invalid characters are: \, /, :, *, ?, &quot;, ', &lt;, &gt;, &amp;, |, %</you_have_used_invalid_characters_servername>
+<you_have_used_invalid_characters_folder>You have used invalid characters. These invalid characters are:  /, :, *,?, &quot;, ', &lt;, &gt;, &amp;, |</you_have_used_invalid_characters_folder>
+<you_have_used_invalid_characters_foldername>You have used invalid characters. These invalid characters are: :, *, ?, &quot;, ', &lt;, &gt;, &amp;, |,  (space)</you_have_used_invalid_characters_foldername>
+<you_have_used_invalid_characters_fileformat>You have used invalid characters. These invalid characters are: \, /, :, *, ?, &quot;, ', &lt;, &gt;, &amp;, |</you_have_used_invalid_characters_fileformat>
+<your_have_used_name_with_too_long_or_short_length>You have input a name in too long or too short length!</your_have_used_name_with_too_long_or_short_length>
+<you_have_used_fileformat_without_time_variable_T>Warning! You have used a filename without time variable %T. This might cause your reports be overridden!</you_have_used_fileformat_without_time_variable_T>
+<invalid_protocol>Please Choose a valid Protocol!</invalid_protocol>
+<invalid_schedule_time>schedule time must be larger than aggregation level!</invalid_schedule_time>
+<!-- End of Addition -->
+<!-- Penlin addition when 2015/11/03 for event_setting page -->
+<event_name>Event name</event_name>
+<enable_this_event>Enable this event</enable_this_event>
+<enable_this_recording>Enable this recording</enable_this_recording>
+<enable_this_trigger>Enable this trigger</enable_this_trigger>
+<priority>Priority</priority>
+<high>High</high>
+<normal>Normal</normal>
+<low>Low</low>
+<delay_for>Detect next event trigger after</delay_for>
+<seconds>seconds</seconds>
+<seconds_before_detecting_next_event>second(s).</seconds_before_detecting_next_event>
+<seconds_before_recording> seconds before recording</seconds_before_recording>
+<schedule>Schedule</schedule>
+<trigger>Trigger</trigger>
+<trigger_D_O_1_for>Trigger digital output 1 for</trigger_D_O_1_for>
+<trigger_D_O_2_for>Trigger digital output 2 for</trigger_D_O_2_for>
+<trigger_D_O_for>Trigger digital output for</trigger_D_O_for>
+<trigger_duration>Trigger duration</trigger_duration>
+<trigger_event_when_detected_audio>Trigger event when detected audio</trigger_event_when_detected_audio>
+<trigger_every>Trigger every other</trigger_every>
+<trigger_name>Trigger name</trigger_name>
+<trigger_settings>Trigger Settings</trigger_settings>
+<trigger_time>Trigger time</trigger_time>
+<trigger_type>Trigger type</trigger_type>
+<triggered>Triggered</triggered>
+<action>Action</action>
+<event_schedule>Event schedule</event_schedule>
+<event_server>event server</event_server>
+<event_settings>Event settings</event_settings>
+<event_condition>Event trigger</event_condition>
+<event_media>event media</event_media>
+<sun>Sun</sun>
+<mon>Mon</mon>
+<tue>Tue</tue>
+<wed>Wed</wed>
+<thu>Thu</thu>
+<fri>Fri</fri>
+<sat>Sat</sat>
+<time>Time</time>
+<always>Always</always>
+<from>From</from>
+<to>to</to>
+<video_motion_detection>Video motion detection</video_motion_detection>
+<profile>Profile</profile>
+<note_please_configure>Note: Please configure</note_please_configure>
+<motion_detection>Motion detection</motion_detection>
+<first>first</first>
+<periodic>Periodically</periodic>
+<trigger_every>Trigger every other</trigger_every>
+<minutes>minute(s)</minutes>
+<digital_input>Digital input</digital_input>
+<system_boot>System boot</system_boot>
+<recording_notify>Recording notify</recording_notify>
+<audio_detection>Audio detection</audio_detection>
+<rises_above>rises above</rises_above>
+<falls_below>falls below</falls_below>
+<alarm_level>alarm level</alarm_level>
+<camera_tampering_detection>Camera tampering detection</camera_tampering_detection>
+<check_sd_card>Please check SD card if already prepared or suggest formatting again</check_sd_card>
+<tampering>Tampering detection</tampering>
+<too_blurry>Too blurry</too_blurry>
+<too_bright>Too bright</too_bright>
+<too_dark>Too dark</too_dark>
+<active>Active</active>
+<active_to_normal>Active to Normal</active_to_normal>
+<normal_to_active>Normal to Active</normal_to_active>
+<the_name_has_already_existed>This name is already registered. Please try another name or delete the old one.</the_name_has_already_existed>
+<the_name_has_already_existed_please_try_another_name_or_delete_the_old_one>This name is already registered. Please try another name or delete the old one.</the_name_has_already_existed_please_try_another_name_or_delete_the_old_one>
+<the_pw_should_contain_at_least_8_chars>The password should contain at least 8 characters.</the_pw_should_contain_at_least_8_chars>
+<no_more_list_for_audioclip_to_enter>Could not add a new audio clip because the maximum number of audio clips is 20.</no_more_list_for_audioclip_to_enter>
+<no_more_list_for_event_to_enter>Could not add a new event setting because the maximum number of event settings is 3.</no_more_list_for_event_to_enter>
+<no_more_list_for_media_to_enter>Could not add a new media setting because the maximum number of media settings is 5.</no_more_list_for_media_to_enter>
+<no_more_list_for_recording_to_enter>Could not add a new recording setting because the maximum number of recordings is 2.</no_more_list_for_recording_to_enter>
+<no_more_list_for_server_to_enter>Could not add a new server setting because the maximum number of server settings is 5.</no_more_list_for_server_to_enter>
+<no_more_list_to_enter>Could not add a new list because the maximum number of lists is 10</no_more_list_to_enter>
+<note_please_configure>Note: Please configure</note_please_configure>
+<manual_trigger>Manual triggers</manual_trigger>
+<backup_media_while_network_loss>Backup media if the network is disconnected</backup_media_while_network_loss>
+<puremedia>Media</puremedia>
+<pureserver>Server</pureserver>
+<extra_parameter>Extra parameter</extra_parameter>
+<sd>SD</sd>
+<sd_test>SD test</sd_test>
+<view>View</view>
+<create_folders_by_date_time_and_hour_automatically>Create folders by date time and hour automatically</create_folders_by_date_time_and_hour_automatically>
+<add_server>Add server</add_server>
+<add_media>Add media</add_media>
+<save_event>Save event</save_event>
+<save_server>Save server</save_server>
+<save_media>Save media</save_media>
+<event>Event</event>
+<server>Server</server>
+<media>Media</media>
+<passive_mode>Passive mode</passive_mode>
+<server_type>Server type</server_type>
+<this_server_requires_a_secure_connection_ssl>This server requires a secure connection (SSL)</this_server_requires_a_secure_connection_ssl>
+<network_storage>Network storage</network_storage>
+<network_storage_location>Network storage location</network_storage_location>
+<_for_example_my_nas_disk_folder_>(For example: \\my_nas\disk\folder)</_for_example_my_nas_disk_folder_>
+<workgroup>Workgroup</workgroup>
+<media_freespace>Available memory space</media_freespace>
+<media_name>Media name</media_name>
+<media_option>Media Option</media_option>
+<media_options>Media Options</media_options>
+<media_settings>Media settings</media_settings>
+<media_size_is_over_free_space>Exceed maximum memory space.</media_size_is_over_free_space>
+<media_type>Media type</media_type>
+<attached_media>Attached media:</attached_media>
+<video_clip>Video clip</video_clip>
+<system_log>System log</system_log>
+<pre_event_image_s>pre-event image(s)</pre_event_image_s>
+<post_event_image_s>post-event image(s)</post_event_image_s>
+<pre_event_recording>Pre-event recording</pre_event_recording>
+<pre_event_recording_seconds_warnming_message>Pre-event recording seconds can not be larger than maximum duration.</pre_event_recording_seconds_warnming_message>
+<pre_event_seconds_can_not_be_larger_than_max_duration>Pre-event recording seconds can not be larger than maximum duration.</pre_event_seconds_can_not_be_larger_than_max_duration>
+<source>Source</source>
+<maximum_duration>Maximum duration</maximum_duration>
+<maximum_file_size>Maximum file size</maximum_file_size>
+<file_name_prefix>File name prefix</file_name_prefix>
+<add_date_and_time_suffix_to_file_name>Add date and time suffix to file name</add_date_and_time_suffix_to_file_name>
+<toRight>&gt;&gt;</toRight>
+<toLeft>&lt;&lt;</toLeft>
+<available_vadp_triggers>Available VADP triggers pool</available_vadp_triggers>
+<enabled_vadp_tirggers>Enabled Triggers for Event</enabled_vadp_tirggers>
+<person>people</person>
+<event_rules>Analytics Event Rules</event_rules>
+<trigger_source>Source</trigger_source>
+<rule_condition>Trigger</rule_condition>
+<!-- End of Addition -->
+</lang>
+</root>

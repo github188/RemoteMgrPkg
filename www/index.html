@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>VIVOTEK Remote Management</title>
+    <meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE10" />
+	<!-- basic -->
+	<script type="text/javascript" src="include/common.js"></script>                                  
+	<script type="text/javascript" src="include/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="include/kickstart.js"></script>                                  
+	<!-- layout -->
+	<script type="text/javascript" src="include/jquery.xml2json.js"></script>                                  
+	<script type="text/javascript" src="include/jquery.blockUI.js"></script>
+	<script type="text/javascript" src="include/layout.js"></script>                                  
+	<script type="text/javascript" charset="utf-8">
+		$(document).ready(function(){
+			setLayout();
+		});
+	</script>
+	<!-- css -->
+	<link rel="stylesheet" href="css/kickstart.css" type="text/css">
+	<link rel="stylesheet" href="css/style.css" title="style" type="text/css">
+</head>
+<body>
+	<div id="container">
+		<div id="header">
+			<ul id="headermenu" class="menu">
+				<li><a href="http://www.vivotek.com"><img id="logo" src="pic/VIVOTEK_Logo.png"></a></li>
+			</ul>
+		</div>
+		<div id="content">
+			<iframe name="iframe_page" id="iframe_page" frameborder="0"></iframe>
+		</div>
+		<div id="footer">
+			<p>©Copyright VIVOTEK.Inc</p>
+		</div>
+	</div>
+	<div id="loginForm" style="display:none;">
+		<p><label><span title="symbol">Username</span>:</label><input type="text" id="usernameID" name="usernameID" value=""/></p>
+		<p><label><span title="symbol">Password</span>:</label><input type="password" id="passwordID" name="passwordID" value="" onkeypress="pressKey(event)"/></p>
+		<p>
+			<input id="btnCancel" style="width:80px; text-align:center" type="button" title="symbol" onclick="cancelLogin();" value="Cancel"/>
+			<input id="btnLogin" style="width:80px; text-align:center" type="button" title="symbol" onclick="saveLogin();" value="Login"/>
+		</p>
+	</div>
+</body>
+</html>

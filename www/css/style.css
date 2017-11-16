@@ -1,0 +1,150 @@
+/*---------------------------------
+	LAYOUT
+-----------------------------------*/
+html
+{
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background: rgb(220,230,242);
+	font-family: "lucida grande",arial,verdana,sans-serif;
+	font-size: 12px;
+}
+
+#container {
+width: 1280px;
+	height: 100%;
+	background: #fff;
+	margin:0 auto;
+	padding:0;
+	border:0px solid #ccc;
+	position: relative;
+}
+
+#header {
+	width: 100%;
+	height: 62px;
+	position: relative;
+}
+#content {
+	width: 100%;
+	/* height: 90%; */
+	padding: 0;
+}
+/* For only one colum layout */
+#uniContent {
+	width: 100%;
+	height: 100%;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+/*----------------------*/
+/* For two colum layout */
+#sidenav {
+	width: 15%;
+	height: 100%;
+	float: left;
+	background: #ABCDEC;
+}
+#mainContent {
+	width: 85%;
+	height: 100%;
+	float: right;
+	padding-left: 15px;
+	padding-top: 10px;
+}
+/*----------------------*/
+iframe[name=iframe_page] {
+	width: 100%;
+	height: 100%;
+}
+#about {
+	width: 25%;
+	height: auto;
+	float: none;
+	margin: auto;
+	padding-top: 10px;
+}
+#footer {
+	clear: both;
+	width:	100%;
+	height: 32px;
+	margin: 0;
+	padding:0px;
+	text-align:center;
+	border:1px solid #ddd;
+	background:#fff;
+	color:#999;
+	font-size:0.8em;
+	text-shadow:0px 1px 1px #fff;
+	position: absolute;
+	bottom: 0px;
+}
+/*---------------------------------
+	MENU STYLES
+	EDIT BELOW THIS LINE TO CUSTOMIZE
+-----------------------------------*/
+.menu{
+border:0px solid #ccc;
+border-color: rgb(230,238,255); 
+background:	#63A9E8;
+}
+
+.menu.vertical{
+background: #ABCDEC;
+}
+.menu.vertical li a{
+	color: #555;
+}
+
+		.menu li a{
+		text-shadow:none;
+		padding:15px 20px;
+		text-decoration:none;
+		font-size:0.9em;
+		font-family:"lucida grande",arial, verdana,sans-serif;
+		font-weight:bold;
+		color: #eee;
+		}
+
+		.menu li img{
+			max-height: 2em;
+		}
+
+		.menu li.current>a,
+		.menu li.current>a:hover,
+		.menu li.current.hover>a{
+		/* Modified by Richard on 2013/10/29 */
+		background: #6DE0FF;
+		color:#6463E8;
+		text-shadow:0px -1px 0 rgba(0,0,0,0.2);
+		cursor: default;
+		}
+
+		.menu li a:hover,
+		.menu li.hover>a{
+		background: #86C6FF;
+		color: #fff;
+		}
+		
+		/* Add by Alicia on 2014/09/01 */
+		.menu li.selected{
+		background: #4682b4;
+		}
+		
+		/* Add by Alicia on 2014/08/07 */
+		.menu li a.selected{
+		background: #fff;
+		}
+		.menu li a.selected:hover{
+		background: #86C6FF;
+		color: #fff;
+		}
+		

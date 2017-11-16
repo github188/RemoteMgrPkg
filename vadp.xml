@@ -1,0 +1,43 @@
+<vadp>
+	<!-- NECESSARY parameters -->
+        <!-- Package name -->
+	<name>RemoteManagement</name>
+	<!-- Vendor name -->
+	<vendor>VIVOTEK</vendor>
+	<!-- Package version -->
+	<version>1.0.0.1</version>
+	<!-- Define the name of main script -->
+	<initscr>main.sh</initscr>
+	<!-- Package size -->
+	<pkgsize>6248</pkgsize>
+	<!-- Memory requirement -->
+	<resource>
+		<memory>1024</memory>
+	</resource>
+	<!-- Default license status -->
+	<license>N/A</license>
+	<!-- Required VADP version -->
+	<reqvadpversion>1.2.0.0</reqvadpversion>
+
+	<!-- OPTIONAL parameters -->
+	<!-- Home page of vendor -->
+	<vendorurl>http://www.vivotek.com</vendorurl>
+	<!-- Link to module page -->
+	<moduleurl></moduleurl>
+	<!-- Identify if the package support upgrade -->
+	<upgrade>yes</upgrade>
+	<!-- Identify if the package support backup -->
+	<backup>no</backup>
+	<!-- Identify if the package support reload -->
+	<reload>no</reload>
+	<!-- Identify if the package support restore -->
+	<restore>no</restore>
+	<!-- Execute chkver when upload -->
+	<chkver>no</chkver>
+	<!-- ONVIF description file of event registration -->
+	<regevent>conf.d/SupportedRules.xml</regevent>
+	<!-- Identify if the package using VVTK license mechanism -->
+	<vvtklicensemec>no</vvtklicensemec>
+	<!-- Define the default running status -->
+	<defaultrun>no</defaultrun>
+</vadp>
